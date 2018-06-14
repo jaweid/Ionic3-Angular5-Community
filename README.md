@@ -1,8 +1,8 @@
 # XunCommunity
 
 #### 项目介绍
-{**以下是码云平台说明，您可以替换为您的项目简介**
-这是我迈向高级Angular工程师的必经之路，就从这个项目开始，坚决放弃低质量的代码，Better Code , Less Time , Best Project}
+
+这是我迈向高级Angular工程师的必经之路，就从这个项目开始，坚决放弃低质量的代码，Better Code , Less Time , Best Project
 
 #### 软件架构
 软件架构说明
