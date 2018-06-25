@@ -1,0 +1,29 @@
+app-home-navbar {
+
+  .position-btn {
+    ion-icon{
+      font-size: 18px;
+      margin-right: 10px;
+    }
+  }
+
+
+  .search-btn {
+    height: 30px;
+    max-width: 100%;
+    border-radius: 20px;
+    &-text {
+      font-size: 10px;
+      color: $text-gray;
+      margin-right: 20px;
+    }
+    ion-icon{
+      font-size: 20px;
+    }
+  }
+
+  .notification-btn img{
+    width: 30px;
+    height: 30px;
+  }
+}

@@ -1,0 +1,66 @@
+app-times-trade {
+  .time-item {
+    background-color: #ffffff;
+    margin-bottom: 10px;
+
+    &-avatar {
+      img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+    &-detail-top {
+      font-size: 14px;
+      color: #212121;
+      &-name{
+        max-width: 50%;
+      }
+      &-price {
+        right: 0;
+        font-weight: bold;
+        color: #2D2D2D;
+      }
+    }
+    &-detail-bottom {
+      padding-top: 8px;
+      .number {
+        margin-right: 20px;
+      }
+      span {
+        font-size: 12px;
+        color: #929292;
+      }
+      img {
+        margin-top: 3px;
+      }
+      .phone {
+        width: 15px;
+        height: 15px;
+        float: right;
+        margin-right: 10px;
+
+      }
+    }
+    &-button {
+      margin-left: 50px;
+      button {
+        width: 65%;
+        height: 23px;
+        font-size: 15px;
+      }
+    }
+    &-img-list {
+      width: 100vw;
+      padding: 0 2vw;
+      img {
+        width: 30vw;
+        height: 60px;
+        border-radius: 10px;
+      }
+      .img_middle{
+        margin: 0 3vw;
+      }
+    }
+  }
+
+}

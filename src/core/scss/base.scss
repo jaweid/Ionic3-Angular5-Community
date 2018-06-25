@@ -1,0 +1,31 @@
+//text
+.app-text{
+  &-small{
+    color:$text-dark;
+    font-size:10px;
+  }
+}
+
+
+//divider
+.app-divider{
+  background-color: #ffffff;
+  width: 100%;
+  margin-bottom:10px ;
+  p{
+    font-size: 16px;
+    color: #4C4C4C;
+    padding: 10px ;
+    margin: 0;
+  }
+
+  span{
+    font-size: 10px;
+    float: right;
+    color: #FA8A8A;
+  }
+
+
+}
+
+

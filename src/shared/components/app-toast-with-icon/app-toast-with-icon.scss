@@ -1,0 +1,20 @@
+app-toast-with-icon {
+  .toast-dialog{
+    width: 30vw;
+    height: 30vw;
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    filter: alpha(opacity=50);
+    border-radius: 10px;
+    margin-top: 40vh;
+    margin-left: 35vw;
+    ion-icon{
+      font-size: 30px;
+      margin-top: 20px;
+      color: #ffffff;
+    }
+    p{
+      color: #ffffff;
+      font-size: 14px;
+    }
+  }
+}
