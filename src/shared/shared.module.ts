@@ -14,45 +14,48 @@ import {AppLoadingComponent} from "./components/app-loading/app-loading";
 import {AppToastWithIconComponent} from "./components/app-toast-with-icon/app-toast-with-icon";
 import {AppHomeNavbarComponent} from "./components/app-home-navbar/app-home-navbar";
 import {AppTimesTradeComponent} from "./components/app-times-trade/app-times-trade";
+import {AppPeopleSearchComponent} from "./components/app-people-search/app-people-search";
 
 @NgModule({
-  imports:[
+  imports: [
     IonicPageModule,
     HttpClientModule,
 
 
   ],
-  declarations:[
+  declarations: [
     AppToastWithIconComponent,
     AppSwiperComponent,
     AppLoadingComponent,
     AppHomeNavbarComponent,
-    AppTimesTradeComponent
+    AppTimesTradeComponent,
+    AppPeopleSearchComponent
   ],
-  exports:[
+  exports: [
     AppToastWithIconComponent,
     AppSwiperComponent,
     AppLoadingComponent,
     AppHomeNavbarComponent,
-    AppTimesTradeComponent
+    AppTimesTradeComponent,
+    AppPeopleSearchComponent
   ],
-  entryComponents:[
+  entryComponents: [
     AppToastWithIconComponent
-    ]
+  ]
 })
 
 export class SharedModule {
- static forRoot():ModuleWithProviders{
-   return {
-     ngModule:SharedModule,
-     providers:[
-       GlobalData,
-       NativeService,
-       HttpClientService,
-       ThirdSocialService,
-       Utils,
-       HelperService
-     ]
-   }
- }
+  static forRoot(): ModuleWithProviders {
+    return {
+      ngModule: SharedModule,
+      providers: [
+        GlobalData,
+        NativeService,
+        HttpClientService,
+        ThirdSocialService,
+        Utils,
+        HelperService
+      ]
+    }
+  }
 }

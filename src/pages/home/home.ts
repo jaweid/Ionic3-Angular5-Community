@@ -4,6 +4,7 @@ import {} from '../../assets/mockData/mockData.json'
 import {HelperService} from "../../shared/services/helper.service";
 import {HomeNavList} from "../../core/consts/config/const";
 import {Time} from "../../core/resources/timeTrade/time";
+import {PeopleSearch} from "../../core/resources/looking-for-person/people-search";
 
 /**
  * Generated class for the HomePage page.
@@ -22,7 +23,6 @@ export class HomePage {
     'assets/imgs/home/ad.png',
     'assets/imgs/home/ad.png',
     'assets/imgs/home/ad.png'
-
   ];
 
   timeList: Time[] = [
@@ -69,6 +69,35 @@ export class HomePage {
       ]
     }
   ];
+
+  peopleSearchList: PeopleSearch[] = [
+    {
+      id: '1',
+      avatar: 'assets/imgs/mockdata/looking-for-person.jpg',
+      title: '5年战友，今在何方',
+      subTitle: '寻找北方军区一连三排，5班班长章三。寻找北方军区一连三排，5班班长章三。寻找北方军区一连三排，5班班长章三',
+      date: '2018/4/15',
+      viewNumber: '1234',
+      commentsNumber: '988'
+    },
+    {
+      id: '1',
+      avatar: 'assets/imgs/mockdata/looking-for-person.jpg',
+      title: '5年战友，今在何方',
+      subTitle: '寻找北方军区一连三排，5班班长章三。',
+      date: '2018/4/15',
+      viewNumber: '1234',
+      commentsNumber: '988'
+    },
+    {
+      id: '1',
+      avatar: 'assets/imgs/mockdata/looking-for-person.jpg',
+      title: '5年战友，今在何方',
+      subTitle: '寻找北方军区一连三排，5班班长章三。',
+      date: '2018/4/15',
+      viewNumber: '1234',
+      commentsNumber: '988'
+    }];
   navList = HomeNavList;
 
   constructor(public navCtrl: NavController,
