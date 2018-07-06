@@ -106,7 +106,11 @@ export class HomePage {
   }
 
   ionViewDidLoad() {
-    this.helper.initSwiper();
+    // this.helper.initSwiper();
+  }
+
+  nav(value){
+    this.navCtrl.push(value);
   }
 
 }

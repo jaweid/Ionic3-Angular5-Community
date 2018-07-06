@@ -11,16 +11,16 @@ ion-icon {
   }
   // custom icons
   &[class*="app-pin"] {
-    mask-image: url(../../assets/imgs/home/icon/pin.png);
+    mask-image: url(../assets/imgs/home/icon/pin.png);
   }
   &[class*="app-search"] {
-    mask-image: url(../../assets/imgs/home/icon/search.png);
+    mask-image: url(../assets/imgs/home/icon/search.png);
   }
   &[class*="app-viewer"] {
-    mask-image: url(../../assets/imgs/home/icon/viewer.png);
+    mask-image: url(../assets/imgs/home/icon/viewer.png);
   }
   &[class*="app-lover"] {
-    mask-image: url(../../assets/imgs/home/icon/lover.png);
+    mask-image: url(../assets/imgs/home/icon/lover.png);
   }
 }
 

@@ -4,7 +4,7 @@
   <app-swiper [ImgList]="adLists"></app-swiper>
 
   <ion-row class="home-nav">
-    <ion-col *ngFor="let item of navList" text-center col-4>
+    <ion-col *ngFor="let item of navList" text-center col-4 tappable (click)="nav(item.page)">
       <img [src]="'assets/imgs/home/icon/'+item.icon+'.png'">
       <p> {{item.text}}</p>
     </ion-col>
@@ -20,7 +20,7 @@
 
   <app-times-trade [timeList]="timeList"></app-times-trade>
 
-  <img class="ad_middle" src="../../assets/imgs/mockdata/home_ad_middle.jpg">
+  <img class="ad_middle" src="assets/imgs/mockdata/home_ad_middle.jpg">
 
   <div class="app-divider" text-center>
     <p>寻推荐

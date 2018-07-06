@@ -1,15 +1,20 @@
+import {PeopleSearchPage} from "../../../pages/people-search/people-search";
+
 export const HomeNavList=[
   {
     text:'寻人',
-    icon:'navPerson'
+    icon:'navPerson',
+    page:"PeopleSearchPage"
   },
   {
     text:'寻事',
-    icon:'navThings'
+    icon:'navThings',
+    page:"ThingSearchPage"
   },
   {
     text:'寻物',
-    icon:'navSomething'
+    icon:'navSomething',
+    page:"GoodsSearchPage"
   },
   {
     text:'生活',

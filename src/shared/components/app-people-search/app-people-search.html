@@ -14,16 +14,20 @@
 
     </div>
 
-    <div class="time-item-detail-bottom">
-      <img style="width: 14px;height: 14px" src="../../../assets/imgs/home/icon/date.png">
-      <span class="number">{{item.date}}</span>
-      <div class="right-area">
-        <img style="width: 17px;height: 8px" src="../../../assets/imgs/home/icon/viewer.png">
+    <ion-row class="time-item-detail-bottom">
+      <ion-col col-6>
+        <img style="width: 14px;height: 14px" src="assets/imgs/home/icon/date.png">
+        <span class="number">{{item.date}}</span>
+      </ion-col>
+      <ion-col col-3>
+        <img style="width: 17px;height: 8px" src="assets/imgs/home/icon/viewer.png">
         <span class="number">{{item.viewNumber}}</span>
-        <img style="width: 14px;height: 12px" src="../../../assets/imgs/home/icon/lover.png">
+      </ion-col>
+      <ion-col col-3>
+        <img style="width: 14px;height: 12px;margin-left: 10px" src="assets/imgs/home/icon/lover.png">
         <span>{{item.commentsNumber}}</span>
-      </div>
-    </div>
+      </ion-col>
+    </ion-row>
   </ion-item>
 
 

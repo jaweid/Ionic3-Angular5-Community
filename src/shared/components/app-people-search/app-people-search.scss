@@ -3,7 +3,7 @@ app-people-search {
     background-color: #ffffff;
     margin-bottom: 10px;
     ion-item {
-      padding-left: 9px;
+      padding:0 9px;
     }
     &-avatar {
       margin-right: 10px !important;
@@ -37,9 +37,6 @@ app-people-search {
     &-detail-bottom {
       position: absolute;
       bottom: 5px;
-      .right-area {
-        float: right;
-      }
       .number {
         margin-right: 5px;
       }
