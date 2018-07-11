@@ -15,6 +15,7 @@ import {AppToastWithIconComponent} from "./components/app-toast-with-icon/app-to
 import {AppHomeNavbarComponent} from "./components/app-home-navbar/app-home-navbar";
 import {AppTimesTradeComponent} from "./components/app-times-trade/app-times-trade";
 import {AppPeopleSearchComponent} from "./components/app-people-search/app-people-search";
+import {AppGoodsSearchComponent} from "./components/app-goods-search/app-goods-search";
 
 @NgModule({
   imports: [
@@ -29,7 +30,8 @@ import {AppPeopleSearchComponent} from "./components/app-people-search/app-peopl
     AppLoadingComponent,
     AppHomeNavbarComponent,
     AppTimesTradeComponent,
-    AppPeopleSearchComponent
+    AppPeopleSearchComponent,
+    AppGoodsSearchComponent
   ],
   exports: [
     AppToastWithIconComponent,
@@ -37,7 +39,8 @@ import {AppPeopleSearchComponent} from "./components/app-people-search/app-peopl
     AppLoadingComponent,
     AppHomeNavbarComponent,
     AppTimesTradeComponent,
-    AppPeopleSearchComponent
+    AppPeopleSearchComponent,
+    AppGoodsSearchComponent
   ],
   entryComponents: [
     AppToastWithIconComponent

@@ -1,5 +1,5 @@
 import {Component, Input} from '@angular/core';
-import {PeopleSearch} from "../../../core/resources/looking-for-person/people-search";
+import {PeopleSearch} from "../../../core/resources/people-search/people-search";
 import {DefaultAvatar} from "../../../core/consts/config/const";
 
 /**

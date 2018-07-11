@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import {NavController} from "ionic-angular";
 import {ChooseCityComponent} from "../../../pages/home/choose-city/choose-city";
 import {SearchPage} from "../../common-pages/search/search";
+import {NotificationsPage} from "../../../pages/home/notifications/notifications";
 
 /**
  * Generated class for the AppHomeNavbarComponent component.
@@ -22,6 +23,9 @@ export class AppHomeNavbarComponent {
    this.navCtrl.push(ChooseCityComponent)
   }
 
+  notifications(){
+    this.navCtrl.push(NotificationsPage);
+  }
   search(){
     this.navCtrl.push('SearchPage')
   }

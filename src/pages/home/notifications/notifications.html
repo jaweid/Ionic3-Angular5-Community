@@ -1,0 +1,21 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>公告</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content >
+  <div class="notifications-list">
+    <div class="notifi-item"  *ngFor="let item of notificationsList" >
+      <span class="text">
+        {{ item.title }}
+      </span>
+      <p class="date" text-right>{{item.date}}</p>
+    </div>
+  </div>
+
+</ion-content>

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {Time} from "../../core/resources/timeTrade/time";
 
 /**
  * Generated class for the TimesTradePage page.
@@ -21,5 +22,49 @@ export class TimesTradePage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad TimesTradePage');
   }
+  timeList: Time[] = [
+    {
+      id: '1',
+      header: 'assets/imgs/mockdata/user1.jpg',
+      name: '手把手教你从零开始弹古筝手把手教你从零开始弹古筝',
+      price: '200',
+      viewNumber: '1234',
+      lover: '23',
+      phone: '1234',
+      imgList: [
+        'assets/imgs/mockdata/home_time_1.jpg',
+        'assets/imgs/mockdata/home_time_2.jpg',
+        'assets/imgs/mockdata/home_time_3.jpg'
+      ]
+    },
+    {
+      id: '1',
+      header: 'assets/imgs/mockdata/user1.jpg',
+      name: '手把手教你从零开始弹古筝',
+      price: '200',
+      viewNumber: '1234',
+      lover: '23',
+      phone: '1234',
+      imgList: [
+        'assets/imgs/mockdata/home_time_1.jpg',
+        'assets/imgs/mockdata/home_time_2.jpg',
+        'assets/imgs/mockdata/home_time_3.jpg'
+      ]
+    },
+    {
+      id: '1',
+      header: 'assets/imgs/mockdata/user1.jpg',
+      name: '手把手教你从零开始弹古筝',
+      price: '200',
+      viewNumber: '1234',
+      lover: '23',
+      phone: '1234',
+      imgList: [
+        'assets/imgs/mockdata/home_time_1.jpg',
+        'assets/imgs/mockdata/home_time_2.jpg',
+        'assets/imgs/mockdata/home_time_3.jpg'
+      ]
+    }
+  ];
 
 }

@@ -4,7 +4,7 @@ import {} from '../../assets/mockData/mockData.json'
 import {HelperService} from "../../shared/services/helper.service";
 import {HomeNavList} from "../../core/consts/config/const";
 import {Time} from "../../core/resources/timeTrade/time";
-import {PeopleSearch} from "../../core/resources/looking-for-person/people-search";
+import {PeopleSearch} from "../../core/resources/people-search/people-search";
 
 /**
  * Generated class for the HomePage page.
@@ -69,7 +69,6 @@ export class HomePage {
       ]
     }
   ];
-
   peopleSearchList: PeopleSearch[] = [
     {
       id: '1',
@@ -98,6 +97,7 @@ export class HomePage {
       viewNumber: '1234',
       commentsNumber: '988'
     }];
+
   navList = HomeNavList;
 
   constructor(public navCtrl: NavController,

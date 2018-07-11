@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import {PeopleSearch} from "../../core/resources/looking-for-person/people-search";
+import {PeopleSearch} from "../../core/resources/people-search/people-search";
 
 /**
  * Generated class for the PeopleSearchPage page.

@@ -1,0 +1,24 @@
+page-notifications {
+ .notifications-list{
+    margin-top: 10px;
+  }
+  .notifi-item {
+    padding:10px 10px 0 10px;
+    margin-bottom: 2px;
+    background-color: #ffffff;
+    .text{
+      width: 100%;
+      overflow : hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+    }
+
+
+    .date{
+      color: #919191;
+      font-size: 12px;
+    }
+  }
+}
