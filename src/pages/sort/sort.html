@@ -7,12 +7,36 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>sort</ion-title>
+    <ion-title>分类</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
+<ion-content fullscreen>
+  <ion-grid no-padding>
+    <ion-row>
+      <!--一级分类-->
+      <ion-col col-3 class="menus">
+        <ion-scroll scrollY="true" style="height:100%">
+          <ion-list no-lines>
+            <ion-item button class="menuItem" *ngFor="let c of firstMenus;let i=index" [ngClass]="{'active': i==0}" text-center (click)="itemClick(c,$event)">
+              {{c.name}} </ion-item>
+          </ion-list>
+        </ion-scroll>
+      </ion-col>
+      <ion-col class="items">
 
+        <ion-scroll scrollY="true" #scroll style="height:100%">
+          <!-- 二级分类 -->
+
+          <app-secondary-menu [secondaryMenuList]="secondaryMenus" ></app-secondary-menu>
+
+          <ion-infinite-scroll >
+            <ion-infinite-scroll-content   loadingText="加载更多数据中..." threshold="30%"></ion-infinite-scroll-content>
+          </ion-infinite-scroll>
+        </ion-scroll>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>

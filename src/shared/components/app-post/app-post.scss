@@ -1,0 +1,35 @@
+app-post {
+  .post-form-label {
+    height: 100%;
+    background-color: #7CBFE9;
+    border-radius: 20px;
+    font-size: 13px;
+    color: #ffffff;
+    padding: 5px 10px;
+
+    &-btn {
+      @extend .post-form-label;
+      background-color: #ffffff;
+      color: #949494;
+      border: 1px dotted #BFBFBF;
+    }
+  }
+
+  .post-form-label-btn-col {
+    margin-top: 10px;
+  }
+  .address {
+    span {
+      color: #878787;
+      vertical-align: center;
+    }
+  }
+  .add-img {
+    padding: 0 10px;
+    .tip {
+      color: #C7C7C7;
+      font-size: 12px;
+    }
+  }
+
+}

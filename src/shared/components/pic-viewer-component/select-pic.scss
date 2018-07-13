@@ -1,0 +1,18 @@
+page-select-pic {
+  .pictures{
+    width: 85px;
+    height: 85px;
+    margin: 2px;
+    overflow: hidden;
+  }
+
+  .add{
+    background-color: transparent;
+    font-size: 60px;
+    color: #8c8c8c;
+    text-align: center;
+    border: dashed 1px #D8D8D8;
+    line-height: 85px;
+    vertical-align: middle;
+  }
+}

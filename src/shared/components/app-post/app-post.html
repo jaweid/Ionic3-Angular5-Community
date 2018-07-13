@@ -1,0 +1,46 @@
+<div class="app-form">
+  <ion-item>
+    <ion-input type="text" value="" placeholder="标题"></ion-input>
+  </ion-item>
+
+  <button ion-item>分类 <span item-end class="subtitle">{{subTitle}}</span></button>
+
+  <ion-item *ngIf="labels">
+    <ion-row>
+      <ion-col col-4 text-center *ngFor="let item of labels">
+        <span class="post-form-label">{{item}}</span>
+
+      </ion-col>
+
+
+      <ion-col col-4 text-center [ngClass]="{'post-form-label-btn-col':labels.length>=3}">
+        <span class="post-form-label-btn">+添加关键词</span>
+      </ion-col>
+    </ion-row>
+  </ion-item>
+
+  <button ion-item *ngIf="subPriceTitle">价格 <span item-end class="subtitle">{{subPriceTitle}}</span></button>
+
+  <ion-item *ngIf="address" class="address">
+    <ion-icon name="app-pin" color="dark"></ion-icon>
+    <span>{{address}}</span>
+  </ion-item>
+
+  <ion-item>
+    <ion-textarea class="form-textarea" value="" placeholder="请输入描述"></ion-textarea>
+  </ion-item>
+
+
+  <div class="add-img">
+    <p>上传照片:</p>
+    <page-select-pic [(fileObjList)]="fileObjList" [max]="6" [destinationType]="0"></page-select-pic>
+    <p class="tip">最多上传6张照片</p>
+
+  </div>
+
+  <div padding>
+    <button ion-button block padding color="theme">{{postBtnText}}</button>
+  </div>
+
+
+</div>

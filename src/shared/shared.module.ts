@@ -16,13 +16,16 @@ import {AppHomeNavbarComponent} from "./components/app-home-navbar/app-home-navb
 import {AppTimesTradeComponent} from "./components/app-times-trade/app-times-trade";
 import {AppPeopleSearchComponent} from "./components/app-people-search/app-people-search";
 import {AppGoodsSearchComponent} from "./components/app-goods-search/app-goods-search";
+import {AppSecondaryMenuComponent} from "./components/app-secondary-menu/app-secondary-menu";
+import {AppPostComponent} from "./components/app-post/app-post";
+import {PicViewerComponentModule} from "./components/pic-viewer-component/pic-viewer-component.module";
+
 
 @NgModule({
   imports: [
     IonicPageModule,
     HttpClientModule,
-
-
+    PicViewerComponentModule
   ],
   declarations: [
     AppToastWithIconComponent,
@@ -31,7 +34,9 @@ import {AppGoodsSearchComponent} from "./components/app-goods-search/app-goods-s
     AppHomeNavbarComponent,
     AppTimesTradeComponent,
     AppPeopleSearchComponent,
-    AppGoodsSearchComponent
+    AppGoodsSearchComponent,
+    AppSecondaryMenuComponent,
+    AppPostComponent
   ],
   exports: [
     AppToastWithIconComponent,
@@ -40,7 +45,9 @@ import {AppGoodsSearchComponent} from "./components/app-goods-search/app-goods-s
     AppHomeNavbarComponent,
     AppTimesTradeComponent,
     AppPeopleSearchComponent,
-    AppGoodsSearchComponent
+    AppGoodsSearchComponent,
+    AppSecondaryMenuComponent,
+    AppPostComponent
   ],
   entryComponents: [
     AppToastWithIconComponent

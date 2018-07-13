@@ -1,0 +1,21 @@
+
+<div class="product" *ngFor="let item of secondaryMenuList">
+  <ion-row *ngIf="item.title">
+    <div class="other-way-login">
+      <span class="line"></span>
+      <span class="txt">{{item.title}}</span>
+      <span class="line"></span>
+    </div>
+
+  </ion-row>
+  <ion-row wrap>
+    <ion-col tappable col-6 text-center *ngFor="let menu of item.menu" tappable (click)="clickMenuEvent(menu.id)">
+
+
+        <img  src="{{menu.img}}">
+        <p>{{menu.text}}</p>
+
+
+    </ion-col>
+  </ion-row>
+</div>

@@ -17,7 +17,10 @@ import {AppMinimize} from "@ionic-native/app-minimize";
 
 import {IonicStorageModule} from "@ionic/storage";
 import {SharedModule} from "../shared/shared.module";
+
+//for need entryComponents module
 import {HomePageModule} from "../pages/home/home.module";
+import {PostPageModule} from "../pages/post/post.module";
 
 @NgModule({
   declarations: [
@@ -32,7 +35,9 @@ import {HomePageModule} from "../pages/home/home.module";
     }),
     IonicStorageModule.forRoot(),
     SharedModule.forRoot(),
-    HomePageModule
+    HomePageModule,
+    PostPageModule
+
   ],
   bootstrap: [IonicApp],
   entryComponents: [

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {PostChooseOption} from "../../core/consts/config/const";
 
 /**
  * Generated class for the PostPage page.
@@ -14,12 +15,16 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'post.html',
 })
 export class PostPage {
-
+  chooseOptions=PostChooseOption;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad PostPage');
+  }
+
+  nav(page){
+    this.navCtrl.push(page);
   }
 
 }
