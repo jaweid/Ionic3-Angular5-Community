@@ -1,0 +1,61 @@
+<!--
+  Generated template for the AddShippingAddressPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-buttons start>
+      <button ion-button (click)="dismiss()" color="dark">取消</button>
+    </ion-buttons>
+    <ion-title>收货地址</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="gray-page-content">
+
+<div class="app-form">
+
+    <ion-item>
+        <ion-label>收货人:</ion-label>
+        <ion-input type="text" [(ngModel)]="addressModel.consignee"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>联系方式:</ion-label>
+        <ion-input type="number" [(ngModel)]="addressModel.mobile"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>所在地区:</ion-label>
+        <city-picker item-content
+                     [cancelText]="'取消'"
+                     [doneText]="'完成'"
+                     [separator]="'-'"
+                     [citiesData]="cityData"
+                     (ionChange)="cityChange($event)">
+        </city-picker>
+      </ion-item>
+      <ion-item>
+        <ion-label>详细地址:</ion-label>
+        <ion-input type="text" placeholder="街道，楼牌号等" [(ngModel)]="addressModel.address"></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label>邮编:</ion-label>
+          <ion-input type="text" [(ngModel)]="addressModel.zipcode"></ion-input>
+        </ion-item>
+
+</div>
+
+
+
+
+</ion-content>
+<ion-footer>
+    <div padding>
+        <button block ion-button color="theme" (click)="confirmAddress()">保存地址</button>
+      </div>
+</ion-footer>

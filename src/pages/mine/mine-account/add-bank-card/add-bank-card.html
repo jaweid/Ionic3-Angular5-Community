@@ -1,0 +1,37 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>添加银行卡</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content >
+  <p class="tip" >请绑定持卡人本人的银行卡</p>
+
+  <div class="app-form">
+    <button ion-item (click)="chooseBankList()">
+      请选择银行
+      <span class="subtitle"  item-end>{{choosedBank?choosedBank.bank_name:'请选择银行'}}</span>
+    </button>
+
+
+    <ion-item>
+      <ion-label>持卡人</ion-label>
+      <ion-input type="text" [(ngModel)]="addBankCardModel.bank_account_name"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>卡号</ion-label>
+      <ion-input placeholder="请输入正确卡号信息" type="number" [(ngModel)]="addBankCardModel.bank_number"></ion-input>
+    </ion-item>
+
+
+  </div>
+
+  <div padding >
+    <button ion-button block color="theme" (click)="addBankCard()">提交</button>
+  </div>
+</ion-content>

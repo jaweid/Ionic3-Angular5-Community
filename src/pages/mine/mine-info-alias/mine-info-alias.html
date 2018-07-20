@@ -1,0 +1,29 @@
+<!--
+  Generated template for the MineInfoAliasPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>更换昵称</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content   >
+
+  <div class="app-form">
+    <ion-item>
+      <ion-input type="text" placeholder="请输入新昵称" value=""  [(ngModel)]="userName"></ion-input>
+    </ion-item>
+  </div>
+
+  <p padding>限制4-16个字符，一个汉字为两个字符</p>
+
+  <div padding>
+    <button ion-button block padding color="theme">保存</button>
+  </div>
+</ion-content>

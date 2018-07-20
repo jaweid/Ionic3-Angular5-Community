@@ -4,7 +4,7 @@ import {Observable, TimeoutError} from "rxjs";
 import {Utils} from "./utils.service";
 import {GlobalData} from "./global-data.service";
 import {NativeService} from "./native.service";
-import {environment} from "../../core/consts/config/environment.config";
+import {environment} from "../consts/environment.config";
 import {HttpClient, HttpErrorResponse} from "@angular/common/http";
 import {ErrorObservable} from 'rxjs/observable/ErrorObservable';
 

@@ -1,8 +1,8 @@
 import {Component} from '@angular/core';
 import {IonicPage, NavController, NavParams} from 'ionic-angular';
-import {FirstMenu} from "../../core/resources/sort/first-menu";
-import {SecondaryMenu} from "../../core/resources/sort/secondary-menu";
-import {SecondaryMenuList} from "../../core/resources/sort/secondary-menu-list";
+import {FirstMenu} from "../../shared/resources/sort/first-menu";
+import {SecondaryMenu} from "../../shared/resources/sort/secondary-menu";
+import {SecondaryMenuList} from "../../shared/resources/sort/secondary-menu-list";
 
 @IonicPage()
 @Component({

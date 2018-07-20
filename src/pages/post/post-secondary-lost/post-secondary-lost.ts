@@ -1,4 +1,5 @@
 import {Component} from '@angular/core';
+import {PostSortForSearchPerson} from "../../../shared/consts/const";
 
 /**
  * Generated class for the PostSecondaryLostComponent component.
@@ -12,11 +13,10 @@ import {Component} from '@angular/core';
 })
 export class PostSecondaryLostComponent {
   labelList = ['女式挎包', '黑色', '阿玛尼'];
-  text: string;
+  postSortsColumnList=[];
 
   constructor() {
-    console.log('Hello PostSecondaryLostComponent Component');
-    this.text = 'Hello World';
+    this.postSortsColumnList[0]=PostSortForSearchPerson;
   }
 
 }

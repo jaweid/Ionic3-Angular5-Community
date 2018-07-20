@@ -1,0 +1,62 @@
+app-order {
+  .id_status {
+    font-size: 12px;
+    padding: 10px 10px 0 10px;
+    .order-sn {
+      font-size: 10px;
+      color: #9C9C9C;
+    }
+    .status-label {
+      color: #666666;
+    }
+    .status {
+      color: #FD0000;
+      font-weight: bold;
+    }
+  }
+
+  .price {
+    border-top: 1px solid #EEEEEE;
+    p {
+      display: inline-block;
+      float: right;
+      margin-left: 10px;
+      font-size: 12px;
+      .sum-price {
+        color: #FC9400;
+        font-weight: bold;
+      }
+    }
+
+  }
+
+  .item-title-img {
+    h4 {
+      overflow: hidden;
+      word-break: break-all;
+      text-overflow: ellipsis;
+    }
+    img {
+      border-radius: 50%;
+    }
+    .volume {
+      margin-top: 0.5rem;
+      font-size: 10px;
+      color: #929292;
+    }
+    .price-single {
+      font-size: 14px;
+      color: #FC9400;
+      font-weight: bold;
+    }
+  }
+
+  .order_group {
+    background-color: #ffffff;
+    margin-top: 10px;
+  }
+
+  .operation-order {
+    border-top: 1px solid #EEEEEE;
+  }
+}

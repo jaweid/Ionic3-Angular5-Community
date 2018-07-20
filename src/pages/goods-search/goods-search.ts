@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
 import {IonicPage, NavController, NavParams} from 'ionic-angular';
-import {GoodsSearch} from "../../core/resources/goods-search/goods-search";
+import {GoodsSearch} from "../../shared/resources/goods-search/goods-search";
 
 /**
  * Generated class for the GoodsSearchPage page.

@@ -1,6 +1,6 @@
 import {Component, Input} from '@angular/core';
-import {Time} from "../../../core/resources/timeTrade/time";
-import {DefaultAvatar} from "../../../core/consts/config/const";
+import {Time} from "../../resources/timeTrade/time";
+import {DefaultAvatar} from "../../consts/const";
 
 /**
  * Generated class for the AppTimesTradeComponent component.

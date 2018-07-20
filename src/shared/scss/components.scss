@@ -1,0 +1,77 @@
+//rewrite ionic components style
+
+//fonts
+@font-face {
+  font-family: PingFang;
+  src: url('../../assets/fonts/PingFang Medium.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  $font-family-base: 'PingFang';
+}
+
+//navBar
+ion-navbar {
+  .toolbar-background {
+    background-color: $app-theme;
+  }
+  .toolbar-title-ios {
+    color: #313131;
+  }
+}
+
+ion-header ion-icon.back-button-icon.icon {
+  color: #313131;
+}
+
+//content
+.fixed-content {
+  background-color: #F6F6F6;
+}
+
+//item
+.item-ios.item-block .item-inner {
+  border: none;
+  .label {
+    font-size: 14px;
+    color: #000000;
+    font-weight: 500;
+  }
+}
+
+//city-picker
+city-picker {
+  font-size: 12px;
+}
+ion-multi-picker{
+  font-size: 12px;
+
+}
+.picker-ios .picker-toolbar{
+  border-bottom-color: #EEEEEE;
+  .button-ios{
+    font-size: 14px;
+  }
+}
+.picker-ios .picker-opt{
+  font-size: 14px;
+  padding-bottom: 10px;
+}
+.picker-ios .picker-button, .picker-ios .picker-button.activated {
+  color: #000000;
+}
+
+.picker-toolbar-multi-picker-cancel {
+  text-align: start !important;
+}
+
+
+//segment toolbar
+.header-ios .toolbar-ios:last-child .toolbar-background-ios{
+  border: none;
+}
+.toolbar-ios .segment-button{
+  max-width: 100%;
+}

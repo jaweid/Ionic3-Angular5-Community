@@ -3,7 +3,15 @@
     <ion-input type="text" value="" placeholder="标题"></ion-input>
   </ion-item>
 
-  <button ion-item>分类 <span item-end class="subtitle">{{subTitle}}</span></button>
+  <button ion-item>
+    <ion-label>分类</ion-label>
+    <ion-multi-picker item-content
+                      [cancelText]="'取消'"
+                      [doneText]="'完成'"
+                      [placeholder]="subTitle"
+                      [multiPickerColumns]="postSortsColumn">
+    </ion-multi-picker>
+  </button>
 
   <ion-item *ngIf="labels">
     <ion-row>

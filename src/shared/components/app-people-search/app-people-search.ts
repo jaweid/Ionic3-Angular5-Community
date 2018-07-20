@@ -1,6 +1,6 @@
 import {Component, Input} from '@angular/core';
-import {PeopleSearch} from "../../../core/resources/people-search/people-search";
-import {DefaultAvatar} from "../../../core/consts/config/const";
+import {PeopleSearch} from "../../resources/people-search/people-search";
+import {DefaultAvatar} from "../../consts/const";
 
 /**
  * Generated class for the AppPeopleSearchComponent component.

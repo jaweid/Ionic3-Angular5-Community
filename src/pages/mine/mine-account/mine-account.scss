@@ -1,0 +1,35 @@
+page-mine-account {
+
+  .account-withdraw-record-btn{
+    color: #000000;
+    font-size: 14px;
+  }
+
+  .account{
+    padding:  10px;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    ion-col{
+      height: 35vw;
+      color: #ffffff;
+      border-radius: 10px;
+      padding-left: 10px;
+      .title{
+        margin-top: 20px;
+      }
+      .value{
+        font-size: 16px;
+        font-weight: bold;
+        margin-top: 30px;
+      }
+    }
+    .balance{
+      background-color: #4092FF;
+      margin-right: 5px;
+    }
+    .score{
+      background-color: #F9798E;
+    }
+  }
+
+}

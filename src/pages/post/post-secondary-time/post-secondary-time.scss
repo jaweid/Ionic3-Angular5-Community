@@ -1,3 +1,14 @@
 post-secondary-time {
-
+  .addOrRemoveRow {
+    position: absolute;
+    bottom: 5px;
+    right: 60px;
+    button {
+      width: 20px;
+      height: 20px;
+    }
+    p {
+      margin-top: 5px;
+    }
+  }
 }

@@ -27,7 +27,7 @@ import {SharedModule} from "../../shared/shared.module";
   ],
   imports: [
     IonicPageModule.forChild(PostPage),
-    SharedModule
-  ],
+    SharedModule,
+  ]
 })
 export class PostPageModule {}

@@ -1,4 +1,99 @@
-<!-- Generated template for the PostSecondaryTimeComponent component -->
-<div>
-  {{text}}
-</div>
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>发布时间</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+
+  <div class="app-form">
+    <ion-item>
+      <ion-input type="text" value="" placeholder="标题"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      时间段 <span item-end class="subtitle">
+
+       <ion-row class="addOrRemoveRow">
+              <ion-col>
+                <button
+                  small ion-button outline icon-only color="dark">
+                  <ion-icon name="ios-remove"></ion-icon>
+                </button>
+              </ion-col>
+              <ion-col>
+                <p>1</p>
+              </ion-col>
+              <ion-col>
+                <button
+                  small ion-button outline icon-only color="dark">
+                  <ion-icon name="ios-add"></ion-icon>
+                </button>
+              </ion-col>
+            </ion-row>
+
+      小时</span>
+    </ion-item>
+
+    <button ion-item>价格区域<span item-end class="subtitle">请选择</span></button>
+
+    <ion-item>
+      <ion-label>价格</ion-label>
+      <ion-input type="text" value=""></ion-input>
+    </ion-item>
+
+    <button ion-item>
+      <ion-label>单位</ion-label>
+      <ion-multi-picker item-content
+                        [cancelText]="'取消'"
+                        [doneText]="'完成'"
+                        [placeholder]="'选择单位'"
+                        [multiPickerColumns]="postTimeUnit">
+      </ion-multi-picker>
+    </button>
+
+    <button ion-item>
+      <ion-label>栏目</ion-label>
+      <ion-multi-picker item-content
+                        [cancelText]="'取消'"
+                        [doneText]="'完成'"
+                        [placeholder]="'选择栏目'"
+                        [multiPickerColumns]="postTimeColumn">
+      </ion-multi-picker>
+    </button>
+
+    <ion-item>
+      <ion-label>标注地点</ion-label>
+      <city-picker item-content
+                   [cancelText]="'取消'"
+                   [doneText]="'完成'"
+                   [separator]="'-'"
+                   [citiesData]="cityData"
+                   (ionChange)="cityChange($event)">
+      </city-picker>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>详细地点</ion-label>
+      <ion-input type="text" value=""></ion-input>
+    </ion-item>
+
+    <div class="add-img">
+      <p>上传照片:</p>
+      <page-select-pic [(fileObjList)]="fileObjList" [max]="6" [destinationType]="0"></page-select-pic>
+      <p class="tip">最多上传6张照片</p>
+
+    </div>
+
+    <div padding>
+      <button ion-button block padding color="theme">发布时间</button>
+    </div>
+
+
+  </div>
+
+
+</ion-content>

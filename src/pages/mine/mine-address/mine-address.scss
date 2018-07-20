@@ -1,0 +1,48 @@
+page-mine-address {
+  .item-address {
+    background-color: #ffffff;
+    padding:0 10px;
+  }
+  .name-mobile {
+    margin-top: 0;
+    padding-top: 10px;
+    span {
+      color: #212121;
+      font-size: 16px;
+      padding-bottom: 10px;
+    }
+
+  }
+  .address {
+    font-size: 14px;
+    color: #212121;
+  }
+
+  .operation {
+    padding: 15px 10px;
+    border-top: 1px solid #EEEEEE;
+    background-color: #ffffff;
+    .default-address-label {
+      color: #212121;
+      font-size: 14px;
+      margin-left: 10px;
+    }
+    .right {
+      font-size: 14px;
+
+      img {
+        margin-left: 10px;
+      }
+      .edit {
+        margin-right: 10px;
+      }
+    }
+    img {
+      width: 16px;
+      height: 14px;
+      vertical-align: middle;
+
+    }
+  }
+
+}

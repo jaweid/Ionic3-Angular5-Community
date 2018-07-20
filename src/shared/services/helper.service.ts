@@ -1,9 +1,13 @@
 import {Injectable} from "@angular/core";
+import {HttpClient} from "@angular/common/http";
 declare var Swiper;
+
 
 @Injectable()
 export class HelperService {
-  constructor(){
+  constructor(
+    public http: HttpClient
+  ){
 
   }
 
@@ -18,5 +22,12 @@ export class HelperService {
       paginationType: 'bullets',//分页器类型,
       paginationClickable: true
     })
+  }
+
+
+  getCitiesData(){
+    return this.http.get('./assets/data/city-data.json')
+      .map((item: any) => (item))
+
   }
 }

@@ -1,0 +1,58 @@
+<!-- Generated template for the CarOrderListComponent component -->
+<div>
+  <ion-item-group *ngFor="let item of orderLists" class="order_group">
+    <p class="id_status">
+      <span class="order-sn">
+        订单号:{{item.orderSN}}
+      </span>
+
+      <span float-right>
+        <span class="status-label">订单状态</span>:<span class="status">{{item.status}}</span>
+      </span>
+    </p>
+
+    <div tappable>
+      <ion-item class="item-title-img">
+        <ion-thumbnail item-start>
+          <img [src]="item.img">
+        </ion-thumbnail>
+        <h4>{{item.title}}</h4>
+        <p ion-text>
+          <span class="volume">数量：{{item.volume}}</span>
+          <span class="price-single" float-right>￥{{item.price}}元/{{item.unit}}</span>
+        </p>
+      </ion-item>
+
+      <ion-item class="price">
+        <p>价格:<span class="sum-price">￥{{item.sumPrice}}元</span></p>
+        <p>共{{item.volume}}个</p>
+      </ion-item>
+
+    </div>
+
+    <ion-item class="operation-order">
+      <ion-row item-end>
+        <button ion-button outline small color="dark"
+                *ngIf="item.statusCode==='1'">取消订单
+        </button>
+        <button outline ion-button small color="orangeBtn" *ngIf="item.statusCode==='1'">
+          去付款
+        </button>
+        <button class="order-btn" ion-button small color="dark"
+                outline
+                *ngIf="item.statusCode==='3'">申请退款
+        </button>
+        <button class="order-btn" ion-button small color="orangeBtn"
+                outline
+                *ngIf="item.statusCode==='3'">确认
+        </button>
+        <button class="order-btn" ion-button small color="orangeBtn"
+                outline
+                *ngIf="item.statusCode==='4'">去评价
+        </button>
+
+      </ion-row>
+    </ion-item>
+  </ion-item-group>
+
+</div>

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {PostSortForSearchPerson} from "../../../shared/consts/const";
 
 /**
  * Generated class for the PostSearchPeopleComponent component.
@@ -13,8 +14,9 @@ import { Component } from '@angular/core';
 export class PostSearchPeopleComponent {
 
   labelList:string[]=['魔兽世界','一区霜之哀伤'];
-
+  postSortsColumnList=[];
   constructor() {
+    this.postSortsColumnList[0]=PostSortForSearchPerson;
   }
 
 }

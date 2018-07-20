@@ -1,0 +1,37 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>银行卡</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <div *ngFor="let item of bankCardList"
+       (press)="presentConfirm(item)"
+       [ngStyle]="{'background-color':item.bgColor}" class="bank-card">
+    <ion-row>
+      <ion-col col-3>
+        <img [src]="item.bank_img">
+      </ion-col>
+      <ion-col col-9>
+        <h4>{{item.bank_name}}</h4>
+        <p>{{item.bank_info}}</p>
+        <p>{{item.number}}</p>
+      </ion-col>
+    </ion-row>
+
+
+
+  </div>
+
+
+  <div>
+    <button ion-button block icon-left color="white" (click)="addBankCard()">
+      <ion-icon name="add"></ion-icon>
+      新增银行卡
+    </button>
+  </div>
+
+</ion-content>

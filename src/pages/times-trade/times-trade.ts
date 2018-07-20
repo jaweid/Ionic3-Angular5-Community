@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import {Time} from "../../core/resources/timeTrade/time";
+import {Time} from "../../shared/resources/timeTrade/time";
 
 /**
  * Generated class for the TimesTradePage page.

@@ -7,12 +7,31 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>order</ion-title>
+    <ion-title>订单</ion-title>
   </ion-navbar>
-
+  <ion-toolbar>
+    <ion-segment [(ngModel)]="segmentModel" color="dark" mode="md">
+      <ion-segment-button value="" tappable (click)="getOrderLists('')">
+        全部
+      </ion-segment-button>
+      <ion-segment-button value="100" tappable  (click)="getOrderLists(100)">
+        交易中
+      </ion-segment-button>
+      <ion-segment-button value="101"  tappable (click)="getOrderLists(101)">
+        待评价
+      </ion-segment-button>
+      <ion-segment-button value="103" tappable (click)="getOrderLists(103)">
+        已完成
+      </ion-segment-button>
+      <ion-segment-button value="104" tappable  (click)="getOrderLists(104)">
+        售后
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
 </ion-header>
 
 
-<ion-content padding>
+<ion-content >
 
+  <app-order [OrderLists]="orderList"></app-order>
 </ion-content>

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {PostSortForSearchPerson} from "../../../shared/consts/const";
 
 /**
  * Generated class for the PostSearchThingComponent component.
@@ -12,8 +13,11 @@ import { Component } from '@angular/core';
 })
 export class PostSearchThingComponent {
   labelList=['婚礼庆典'];
+  postSortsColumnList=[];
 
   constructor() {
+    this.postSortsColumnList[0]=PostSortForSearchPerson;
+
   }
 
 }

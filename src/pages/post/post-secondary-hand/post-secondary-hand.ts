@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {PostSortForSearchPerson} from "../../../shared/consts/const";
 
 /**
  * Generated class for the PostSecondaryHandComponent component.
@@ -11,12 +12,11 @@ import { Component } from '@angular/core';
   templateUrl: 'post-secondary-hand.html'
 })
 export class PostSecondaryHandComponent {
-
-  text: string;
+  postSortsColumnList=[];
 
   constructor() {
-    console.log('Hello PostSecondaryHandComponent Component');
-    this.text = 'Hello World';
+    this.postSortsColumnList[0]=PostSortForSearchPerson;
+
   }
 
 }

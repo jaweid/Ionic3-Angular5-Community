@@ -1,12 +1,8 @@
-import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {Component} from '@angular/core';
+import {IonicPage, NavController, NavParams} from 'ionic-angular';
+import {MineInfoAliasPage} from "./mine-info-alias/mine-info-alias";
+import {RealNameCertifyComponent} from "./real-name-certify/real-name-certify";
 
-/**
- * Generated class for the MinePage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
 
 @IonicPage()
 @Component({
@@ -14,12 +10,26 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'mine.html',
 })
 export class MinePage {
-
+  user={
+    img:'assets/imgs/mockdata/user1.jpg',
+    name:'封弊者',
+    score:'6000'
+  };
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad MinePage');
+  changeAlias(){
+    this.navCtrl.push(MineInfoAliasPage)
   }
 
+  realNameCertification(){
+    this.navCtrl.push(RealNameCertifyComponent)
+
+  }
+  ionViewDidLoad() {
+  }
+
+  newPage(value){
+    this.navCtrl.push(value)
+  }
 }

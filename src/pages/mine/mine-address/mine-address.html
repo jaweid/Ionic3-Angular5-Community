@@ -1,0 +1,51 @@
+<!--
+  Generated template for the ShippingAddressPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+
+    <ion-title>收货地址</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+
+ <div class="item-address" *ngFor="let address of addressList">
+   <div  >
+     <p class="name-mobile">
+       <span>{{address.consignee}}</span>
+       <span float-right>{{address.mobile}}</span>
+     </p>
+     <p class="address">{{address.province+address.city+address.district+address.address}}</p>
+
+
+   </div>
+
+   <p class="operation">
+     <img src="assets/imgs/choosed-outline-logo.png">
+     <span class="default-address-label">默认地址</span>
+
+     <span float-right class="right">
+        编辑<img class="edit" src="assets/imgs/edit-logo.png">
+        删除<img tappable (click)="presentConfirm(address)" src="assets/imgs/delete-logo.png">
+      </span>
+
+   </p>
+ </div>
+
+</ion-content>
+
+
+<ion-footer>
+  <div padding>
+    <button ion-button block (click)="addAddress()" color="theme">
+      添加新地址
+    </button>
+  </div>
+</ion-footer>

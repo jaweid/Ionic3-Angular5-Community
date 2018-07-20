@@ -1,0 +1,44 @@
+page-account-recharge {
+
+  .choose-money{
+    button{
+      width: 100%;
+      background-color: #ffffff;
+      border: none;
+    }
+    .money-activated{
+      background-color: $app-theme;
+      background-image: url("assets/imgs/deposit-money-bg.png");
+    }
+
+
+  }
+
+  .tips{
+    font-size: 8px;
+    color: #939393;
+  }
+
+  .pay-way{
+    margin-bottom: 30px;
+
+    .pay-group {
+      ion-item {
+
+        ion-label{
+          font-size: 14px;
+          color: #000000;
+          .pay-text{
+            margin: 4px 0 0 10px;
+            position: absolute;
+          }
+          img{
+            width: 2rem;
+            height: 2rem;
+          }
+        }
+      }
+    }
+  }
+
+}

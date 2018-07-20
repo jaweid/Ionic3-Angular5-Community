@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
 import { NavController, NavParams} from 'ionic-angular';
-import {Notifications} from "../../../core/resources/notifications/notifications";
+import {Notifications} from "../../../shared/resources/notifications/notifications";
 
 @Component({
   selector: 'page-notifications',

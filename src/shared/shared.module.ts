@@ -19,13 +19,19 @@ import {AppGoodsSearchComponent} from "./components/app-goods-search/app-goods-s
 import {AppSecondaryMenuComponent} from "./components/app-secondary-menu/app-secondary-menu";
 import {AppPostComponent} from "./components/app-post/app-post";
 import {PicViewerComponentModule} from "./components/pic-viewer-component/pic-viewer-component.module";
+import {MultiPickerModule} from "ion-multi-picker";
+import {CityPickerModule} from "ionic2-city-picker";
+import {AppOrderComponent} from "./components/app-order/app-order";
+import {AppMineCollectionsComponent} from "./components/app-mine-collections/app-mine-collections";
 
 
 @NgModule({
   imports: [
     IonicPageModule,
     HttpClientModule,
-    PicViewerComponentModule
+    CityPickerModule,
+    PicViewerComponentModule,
+    MultiPickerModule
   ],
   declarations: [
     AppToastWithIconComponent,
@@ -36,7 +42,9 @@ import {PicViewerComponentModule} from "./components/pic-viewer-component/pic-vi
     AppPeopleSearchComponent,
     AppGoodsSearchComponent,
     AppSecondaryMenuComponent,
-    AppPostComponent
+    AppPostComponent,
+    AppOrderComponent,
+    AppMineCollectionsComponent
   ],
   exports: [
     AppToastWithIconComponent,
@@ -47,7 +55,17 @@ import {PicViewerComponentModule} from "./components/pic-viewer-component/pic-vi
     AppPeopleSearchComponent,
     AppGoodsSearchComponent,
     AppSecondaryMenuComponent,
-    AppPostComponent
+    AppPostComponent,
+    AppOrderComponent,
+    AppMineCollectionsComponent,
+
+
+    HttpClientModule,
+    PicViewerComponentModule,
+    MultiPickerModule,
+    CityPickerModule,
+
+
   ],
   entryComponents: [
     AppToastWithIconComponent

@@ -48,6 +48,36 @@
     font-size: 12px;
     color: #8c8c8c;
   }
+
+  .add-img {
+    padding: 0 10px;
+    .tip {
+      color: #C7C7C7;
+      font-size: 12px;
+    }
+
+  }
+}
+
+.app-border-form{
+  ion-item,button{
+    border-bottom: 1px solid #EEEEEE;
+  }
+  .text-input{
+    font-size: 14px;
+  }
+  .subtitle{
+    font-size: 12px;
+    color: #8c8c8c;
+  }
+
 }
 
 
+//border
+.app-item-border{
+  border-bottom: 1px solid #EEEEEE;
+}
+.app-margin{
+  margin-bottom: 10px;
+}

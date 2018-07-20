@@ -21,6 +21,9 @@ import {SharedModule} from "../shared/shared.module";
 //for need entryComponents module
 import {HomePageModule} from "../pages/home/home.module";
 import {PostPageModule} from "../pages/post/post.module";
+import {MinePageModule} from "../pages/mine/mine.module";
+import {MineAccountPageModule} from '../pages/mine/mine-account/mine-account.module';
+import {MineAddressPageModule} from "../pages/mine/mine-address/mine-address.module";
 
 @NgModule({
   declarations: [
@@ -36,7 +39,10 @@ import {PostPageModule} from "../pages/post/post.module";
     IonicStorageModule.forRoot(),
     SharedModule.forRoot(),
     HomePageModule,
-    PostPageModule
+    PostPageModule,
+    MinePageModule,
+    MineAccountPageModule,
+    MineAddressPageModule
 
   ],
   bootstrap: [IonicApp],

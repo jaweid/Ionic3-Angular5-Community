@@ -1,0 +1,32 @@
+<!--
+  Generated template for the ChooseBankListPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>选择银行</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content >
+
+
+  <div  radio-group class="bank-group">
+    <ion-item *ngFor="let item of bankList" >
+      <ion-thumbnail item-start >
+        <img [src]="item.bank_img">
+      </ion-thumbnail>
+      <ion-label >
+        <div class="band-card-text">
+          <h5>{{item.bank_name}}</h5>
+        </div>
+      </ion-label>
+      <ion-radio color="dark" [checked]="choosedBank.bank_id===item.bank_id" tappable (ionSelect)="chooseBank(item)"></ion-radio>
+    </ion-item>
+  </div>
+</ion-content>

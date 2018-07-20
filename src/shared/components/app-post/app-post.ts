@@ -12,6 +12,8 @@ import {Component, EventEmitter, Input, Output} from '@angular/core';
 })
 export class AppPostComponent {
   fileObjList: string[] = [];
+
+  @Input() postSortsColumn:any[]=[];
   @Input() subTitle: string = '';
   @Input() labels:string[];
   @Input() postBtnText:string='';

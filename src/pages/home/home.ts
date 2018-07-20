@@ -1,10 +1,9 @@
 import {Component} from '@angular/core';
 import {IonicPage, NavController, NavParams} from 'ionic-angular';
-import {} from '../../assets/mockData/mockData.json'
 import {HelperService} from "../../shared/services/helper.service";
-import {HomeNavList} from "../../core/consts/config/const";
-import {Time} from "../../core/resources/timeTrade/time";
-import {PeopleSearch} from "../../core/resources/people-search/people-search";
+import {HomeNavList} from "../../shared/consts/const";
+import {Time} from "../../shared/resources/timeTrade/time";
+import {PeopleSearch} from "../../shared/resources/people-search/people-search";
 
 /**
  * Generated class for the HomePage page.

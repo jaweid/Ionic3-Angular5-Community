@@ -1,0 +1,37 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>我的钱包</ion-title>
+    <ion-buttons end >
+      <button ion-button clear class="account-withdraw-record-btn" color="dark" (click)="withdrawRecordPage()">
+        提现记录
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+
+  <ion-row class="account" >
+    <ion-col class="balance" >
+      <p class="title">账户余额</p>
+      <p class="value"><span style="margin-right: 20px">¥</span>20.00</p>
+    </ion-col>
+    <ion-col class="score" >
+      <p class="title">我的积分</p>
+      <p class="value"><span style="margin-right: 20px">6000</span>积分</p>
+    </ion-col>
+  </ion-row>
+
+
+    <button ion-item (click)="myBankCardsComponent()" class="app-item-border">银行卡</button>
+    <button ion-item (click)="withdrawPage()" class="app-item-border">申请提现</button>
+    <button ion-item (click)="depositPage()" class="app-item-border">余额充值</button>
+    <button ion-item (click)="scoreRulesPage()" class="app-item-border">积分规则</button>
+
+
+
+</ion-content>

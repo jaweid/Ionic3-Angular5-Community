@@ -1,5 +1,5 @@
 import {Component, EventEmitter, Input, Output} from '@angular/core';
-import {SecondaryMenuList} from "../../../core/resources/sort/secondary-menu-list";
+import {SecondaryMenuList} from "../../resources/sort/secondary-menu-list";
 
 /**
  * Generated class for the AppSecondaryMenuComponent component.

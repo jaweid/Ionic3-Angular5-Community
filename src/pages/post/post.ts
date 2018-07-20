@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import {PostChooseOption} from "../../core/consts/config/const";
+import {PostChooseOption} from "../../shared/consts/const";
 
 /**
  * Generated class for the PostPage page.
