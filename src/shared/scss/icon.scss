@@ -22,7 +22,9 @@ ion-icon {
   &[class*="app-lover"] {
     mask-image: url(../assets/imgs/home/icon/lover.png);
   }
-
+  &[class*="app-done"] {
+    mask-image: url(../assets/imgs/completed-logo.png);
+  }
 }
 
 

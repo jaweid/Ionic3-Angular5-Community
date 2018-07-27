@@ -1,0 +1,35 @@
+goods-detail {
+  .title {
+    color: #3D3D3D;
+    font-size: 15px;
+    padding-bottom: 10px;
+  }
+  .date {
+    img {
+      vertical-align: middle;
+      margin-right: 5px;
+    }
+    font-size: 12px;
+  }
+  .info {
+    p {
+      font-size: 11px;
+    }
+    .value {
+      color: #383838;
+    }
+    .price {
+      color: #EC5A54;
+      font-size: 15px;
+    }
+  }
+  .contact {
+    color: #181818;
+    font-size: 14px;
+    padding: 0 10px;
+    img {
+      width: 19px;
+      height: 19px;
+    }
+  }
+}

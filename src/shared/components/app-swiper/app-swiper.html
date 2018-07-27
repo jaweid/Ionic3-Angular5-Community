@@ -1,5 +1,5 @@
 <!-- Swiper -->
-<div class="swiper-container">
+<div class="swiper-container" [ngStyle]="{'height':height+'vh'}">
   <div class="swiper-wrapper">
     <div class="swiper-slide" *ngFor="let item of ImgList" >
       <img class="img" [src]="item">

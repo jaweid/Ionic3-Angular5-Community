@@ -1,4 +1,4 @@
-import {Component, Input} from '@angular/core';
+import {Component, EventEmitter, Input, Output} from '@angular/core';
 import {Time} from "../../resources/timeTrade/time";
 import {DefaultAvatar} from "../../consts/const";
 
@@ -15,8 +15,11 @@ import {DefaultAvatar} from "../../consts/const";
 export class AppTimesTradeComponent {
   placeholderPicture=DefaultAvatar;
   @Input() timeList:Time[]=[];
+  @Output() clickTimesItem: EventEmitter<undefined> = new EventEmitter();
 
   constructor() {
   }
-
+  clickItem(item) {
+    this.clickTimesItem.emit(item);
+  }
 }

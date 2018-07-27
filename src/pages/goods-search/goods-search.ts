@@ -1,6 +1,7 @@
 import {Component} from '@angular/core';
 import {IonicPage, NavController, NavParams} from 'ionic-angular';
 import {GoodsSearch} from "../../shared/resources/goods-search/goods-search";
+import {GoodsDetailComponent} from "./goods-detail/goods-detail";
 
 /**
  * Generated class for the GoodsSearchPage page.
@@ -55,6 +56,10 @@ export class GoodsSearchPage {
   }
 
   ionViewDidLoad() {
+  }
+
+  viewGoodsDetailPage(value) {
+    this.navCtrl.push(GoodsDetailComponent);
   }
 
 }

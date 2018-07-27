@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {Component} from '@angular/core';
+import {IonicPage, NavController, NavParams} from 'ionic-angular';
 import {PeopleSearch} from "../../shared/resources/people-search/people-search";
+import {PeopleDetailComponent} from "./people-detail/people-detail";
 
 /**
  * Generated class for the PeopleSearchPage page.
@@ -48,7 +49,9 @@ export class PeopleSearchPage {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad PeopleSearchPage');
   }
 
+  toPeopleDetailPage(item) {
+    this.navCtrl.push(PeopleDetailComponent,{detail:item})
+  }
 }

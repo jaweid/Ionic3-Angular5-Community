@@ -18,7 +18,9 @@
   </div>
 
 
-  <app-times-trade [timeList]="timeList"></app-times-trade>
+  <app-times-trade [timeList]="timeList"
+                   (clickTimesItem)="toTimesDetailPage($event)"
+  ></app-times-trade>
 
   <img class="ad_middle" src="assets/imgs/mockdata/home_ad_middle.jpg">
 

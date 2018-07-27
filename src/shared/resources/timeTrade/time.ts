@@ -9,6 +9,7 @@ export class Time {
   lover='';
   phone='';
   imgList=[];
+  address?:string='';
 
 
 

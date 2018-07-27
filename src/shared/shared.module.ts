@@ -23,7 +23,9 @@ import {MultiPickerModule} from "ion-multi-picker";
 import {CityPickerModule} from "ionic2-city-picker";
 import {AppOrderComponent} from "./components/app-order/app-order";
 import {AppMineCollectionsComponent} from "./components/app-mine-collections/app-mine-collections";
+import {TimeDetailComponent} from "../pages/times-trade/time-detail/time-detail";
 
+import { CalendarModule } from "ion2-calendar";
 
 @NgModule({
   imports: [
@@ -31,7 +33,8 @@ import {AppMineCollectionsComponent} from "./components/app-mine-collections/app
     HttpClientModule,
     CityPickerModule,
     PicViewerComponentModule,
-    MultiPickerModule
+    MultiPickerModule,
+    CalendarModule
   ],
   declarations: [
     AppToastWithIconComponent,
@@ -44,7 +47,9 @@ import {AppMineCollectionsComponent} from "./components/app-mine-collections/app
     AppSecondaryMenuComponent,
     AppPostComponent,
     AppOrderComponent,
-    AppMineCollectionsComponent
+    AppMineCollectionsComponent,
+
+    TimeDetailComponent
   ],
   exports: [
     AppToastWithIconComponent,
@@ -59,16 +64,18 @@ import {AppMineCollectionsComponent} from "./components/app-mine-collections/app
     AppOrderComponent,
     AppMineCollectionsComponent,
 
+    TimeDetailComponent,
 
     HttpClientModule,
     PicViewerComponentModule,
     MultiPickerModule,
     CityPickerModule,
-
+    CalendarModule
 
   ],
   entryComponents: [
-    AppToastWithIconComponent
+    AppToastWithIconComponent,
+    TimeDetailComponent
   ]
 })
 

@@ -1,0 +1,74 @@
+<!--
+  Generated template for the LoginPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>登录</ion-title>
+  </ion-navbar>
+  <ion-toolbar>
+    <ion-segment [(ngModel)]="segmentModel" color="dark" mode="md">
+      <ion-segment-button value="phone" tappable>
+        短信登录
+      </ion-segment-button>
+      <ion-segment-button value="psd" tappable >
+        密码登录
+      </ion-segment-button>
+
+    </ion-segment>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content  class="gray-page-content">
+<div *ngIf="segmentModel==='phone'">
+  <div class="setting-phone-form" >
+    <ion-item>
+      <ion-input type="number" value="" placeholder='请输入手机号' [(ngModel)]="messageLoginModel.tel"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input type="number" value="" placeholder='请输入验证码' [(ngModel)]="messageLoginModel.smsCode"></ion-input>
+      <p item-end class="get-code" tappable (click)="getValiCode()"><span>获取验证码</span></p>
+    </ion-item>
+
+  </div>
+
+
+   <p  class="forget-psd" item-end tappable (click)="forgetPassword()">忘记密码?</p>
+
+  <div  class="login-btn">
+    <button ion-button color="dark" block round (click)="valiDateLogin()">登录</button>
+  </div>
+  <div text-center>
+      <button (click)="register()"  class="tip-btn" ion-button color="dark" clear ><span class="line">———— </span> 没有账号?立即<strong>注册 </strong><span class="line"> ————</span></button>
+  </div>
+</div>
+
+
+<div *ngIf="segmentModel==='psd'">
+  <div class="setting-phone-form" >
+    <ion-item>
+      <ion-input type="number" value="" placeholder='请输入手机号' [(ngModel)]="passwordLoginModel.tel"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input type="password" value="" placeholder='请输入密码' [(ngModel)]="passwordLoginModel.pwd"></ion-input>
+    </ion-item>
+
+  </div>
+
+
+   <p  class="forget-psd" item-end tappable (click)="forgetPassword()">忘记密码?</p>
+
+  <div  class="login-btn">
+    <button ion-button color="dark" block round (click)="passwordLogin()">登录</button>
+  </div>
+  <div text-center>
+    <button  ion-button class="tip-btn" color="dark" clear ><span class="line">———— </span> 没有账号?立即<strong  (click)="register()" tappable>注册 </strong><span class="line"> ————</span></button>
+  </div>
+</div>
+</ion-content>

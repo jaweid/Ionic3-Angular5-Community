@@ -6,7 +6,7 @@ import {Collections} from "../../resources/collections/collections";
   templateUrl: 'app-mine-collections.html'
 })
 export class AppMineCollectionsComponent {
-  @Input() myCollectionsList:Collections[] = [];
+  @Input() myCollectionsList: Collections[] = [];
 
   constructor() {
   }

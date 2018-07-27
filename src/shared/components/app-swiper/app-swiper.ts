@@ -12,15 +12,14 @@ import {HelperService} from "../../services/helper.service";
   templateUrl: 'app-swiper.html'
 })
 export class AppSwiperComponent {
-  @Input() ImgList=[];
+  @Input() ImgList = [];
+  @Input() height: number = 25;
 
-  constructor(
-  ) {
+  constructor() {
   }
 
-  ionViewDidLoad(){
+  ionViewDidLoad() {
   }
-
 
 
 }

@@ -13,7 +13,10 @@
 </ion-header>
 
 
-<ion-content >
-  <app-times-trade [timeList]="timeList"></app-times-trade>
+<ion-content>
+  <app-times-trade
+    [timeList]="timeList"
+    (clickTimesItem)="toTimesDetailPage($event)"
+  ></app-times-trade>
 
 </ion-content>

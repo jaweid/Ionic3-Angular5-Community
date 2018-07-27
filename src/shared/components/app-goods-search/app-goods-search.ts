@@ -1,4 +1,4 @@
-import {Component, Input} from '@angular/core';
+import {Component, EventEmitter, Input, Output} from '@angular/core';
 import {GoodsSearch} from "../../resources/goods-search/goods-search";
 
 @Component({
@@ -7,8 +7,13 @@ import {GoodsSearch} from "../../resources/goods-search/goods-search";
 })
 export class AppGoodsSearchComponent {
   @Input() goodsSearchList: GoodsSearch[] = [];
+  @Output() clickGoodsItem: EventEmitter<undefined> = new EventEmitter();
 
   constructor() {
+  }
+
+  clickItem(item) {
+    this.clickGoodsItem.emit(item);
   }
 
 }

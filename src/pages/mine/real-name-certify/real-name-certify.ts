@@ -15,7 +15,6 @@ export class RealNameCertifyComponent {
   constructor() {
   }
 
-  public showContent: boolean = false;
 
 
 }

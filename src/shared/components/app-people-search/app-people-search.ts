@@ -1,4 +1,4 @@
-import {Component, Input} from '@angular/core';
+import {Component, EventEmitter, Input, Output} from '@angular/core';
 import {PeopleSearch} from "../../resources/people-search/people-search";
 import {DefaultAvatar} from "../../consts/const";
 
@@ -14,11 +14,14 @@ import {DefaultAvatar} from "../../consts/const";
 })
 export class AppPeopleSearchComponent {
 
-  placeholderPicture=DefaultAvatar;
-  @Input() peopleSearchList:PeopleSearch[]=[];
+  placeholderPicture = DefaultAvatar;
+  @Input() peopleSearchList: PeopleSearch[] = [];
+  @Output() clickPeopleItem: EventEmitter<undefined> = new EventEmitter();
 
   constructor() {
-    console.log('Hello AppLookingForPersonComponent Component');
   }
 
+  clickItem(item) {
+    this.clickPeopleItem.emit(item);
+  }
 }

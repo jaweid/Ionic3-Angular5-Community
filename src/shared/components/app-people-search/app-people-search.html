@@ -1,5 +1,5 @@
 <div *ngFor="let item of peopleSearchList" class="time-item">
-  <ion-item>
+  <ion-item tappable (click)="clickItem(item)">
     <ion-avatar item-start class="time-item-avatar">
       <img [src]="item.avatar?item.avatar:placeholderPicture">
     </ion-avatar>

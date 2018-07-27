@@ -4,6 +4,7 @@ import {HelperService} from "../../shared/services/helper.service";
 import {HomeNavList} from "../../shared/consts/const";
 import {Time} from "../../shared/resources/timeTrade/time";
 import {PeopleSearch} from "../../shared/resources/people-search/people-search";
+import {TimeDetailComponent} from "../times-trade/time-detail/time-detail";
 
 /**
  * Generated class for the HomePage page.
@@ -105,11 +106,14 @@ export class HomePage {
   }
 
   ionViewDidLoad() {
-    // this.helper.initSwiper();
+    this.helper.initSwiper();
   }
 
-  nav(value){
+  nav(value) {
     this.navCtrl.push(value);
   }
 
+  toTimesDetailPage(item) {
+    this.navCtrl.push(TimeDetailComponent, {detail: item})
+  }
 }

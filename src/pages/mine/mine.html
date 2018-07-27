@@ -7,15 +7,22 @@
   </div>
 
   <div class="user-name">
-    <p>
-      <span class="user-name-text">{{user.name}}</span>
-      <span class="sign-in">签到</span>
-    </p>
-    <p>
-      <span class="change-name" tappable (click)="changeAlias()">点击修改昵称</span>
-      <span class="score">{{user.score}}积分</span>
-    </p>
+    <div *ngIf="user.name">
+      <p>
+        <span class="user-name-text">{{user.name}}</span>
+        <span class="sign-in">签到</span>
+      </p>
+      <p>
+        <span class="change-name" tappable (click)="changeAlias()">点击修改昵称</span>
+        <span class="score">{{user.score}}积分</span>
+      </p>
 
+    </div>
+
+    <div *ngIf="!user.name">
+      <button class="login"  (click)="newPage('LoginPage')" ion-button block outline padding color="dark">登录/注册</button>
+
+    </div>
   </div>
 
 
@@ -23,8 +30,8 @@
   <button ion-item class="app-item-border" (click)="realNameCertification()">实名认证</button>
   <button ion-item class="app-margin" (click)="newPage('MineAddressPage')">我的地址</button>
   <button ion-item class="app-item-border">我的发表</button>
-  <button ion-item class="app-margin">我的收藏</button>
-  <button ion-item>系统设置</button>
+  <button ion-item class="app-margin" (click)="myCollections()">我的收藏</button>
+  <button ion-item (click)="newPage('MySettingsPage')">系统设置</button>
 
   <div padding>
     <button ion-button block padding color="theme">退出登录</button>

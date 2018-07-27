@@ -6,6 +6,7 @@ import {SharedModule} from "../../shared/shared.module";
 @NgModule({
   declarations: [
     TimesTradePage,
+
   ],
   imports: [
     IonicPageModule.forChild(TimesTradePage),

@@ -1,13 +1,8 @@
-import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {Component} from '@angular/core';
+import {IonicPage, NavController, NavParams} from 'ionic-angular';
 import {Time} from "../../shared/resources/timeTrade/time";
+import {TimeDetailComponent} from "./time-detail/time-detail";
 
-/**
- * Generated class for the TimesTradePage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
 
 @IonicPage()
 @Component({
@@ -19,9 +14,6 @@ export class TimesTradePage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad TimesTradePage');
-  }
   timeList: Time[] = [
     {
       id: '1',
@@ -67,4 +59,7 @@ export class TimesTradePage {
     }
   ];
 
+  toTimesDetailPage(item) {
+    this.navCtrl.push(TimeDetailComponent, {detail: item})
+  }
 }

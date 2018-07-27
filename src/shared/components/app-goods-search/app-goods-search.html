@@ -1,5 +1,5 @@
 <div *ngFor="let item of goodsSearchList" class="time-item">
-  <ion-item>
+  <ion-item tappable (click)="clickItem(item)">
     <ion-avatar item-start class="time-item-avatar">
       <img [src]="item.img">
     </ion-avatar>
@@ -15,7 +15,7 @@
     </p>
     <ion-row class="time-item-detail-bottom">
       <ion-col col-6>
-        <img style="width: 14px;height: 14px" src="assets/imgs/home/icon/date.png">
+        <img style="width: 13px;height: 13px" src="assets/imgs/home/icon/date.png">
         <span class="number">{{item.date}}</span>
       </ion-col>
       <ion-col col-3>

@@ -1,21 +1,21 @@
 import { Component } from '@angular/core';
 
 /**
- * Generated class for the MySettingComponent component.
+ * Generated class for the ThingDetailComponent component.
  *
  * See https://angular.io/api/core/Component for more info on Angular
  * Components.
  */
 @Component({
-  selector: 'my-setting',
-  templateUrl: 'my-setting.html'
+  selector: 'thing-detail',
+  templateUrl: 'thing-detail.html'
 })
-export class MySettingComponent {
+export class ThingDetailComponent {
 
   text: string;
 
   constructor() {
-    console.log('Hello MySettingComponent Component');
+    console.log('Hello ThingDetailComponent Component');
     this.text = 'Hello World';
   }
 

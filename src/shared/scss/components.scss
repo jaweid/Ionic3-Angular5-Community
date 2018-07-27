@@ -42,12 +42,8 @@ ion-header ion-icon.back-button-icon.icon {
 }
 
 //city-picker
-city-picker {
+city-picker ,ion-datetime,ion-multi-picker{
   font-size: 12px;
-}
-ion-multi-picker{
-  font-size: 12px;
-
 }
 .picker-ios .picker-toolbar{
   border-bottom-color: #EEEEEE;

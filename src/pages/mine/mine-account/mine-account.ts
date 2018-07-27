@@ -1,6 +1,5 @@
 import {Component} from '@angular/core';
 import {IonicPage, NavController, NavParams, AlertController} from 'ionic-angular';
-import {WithdrawPage} from './withdraw/withdraw';
 import {AccountRechargePage} from './account-recharge/account-recharge';
 import {WithdrawRecordPage} from './withdraw-record/withdraw-record';
 import {MyBankCardsComponent} from "./my-bank-cards/my-bank-cards";
@@ -14,10 +13,7 @@ import {ScoreRulesComponent} from "./score-rules/score-rules";
   templateUrl: 'mine-account.html',
 })
 export class MineAccountPage {
-  public leftMoney = 0;
-
   constructor(public navCtrl: NavController,
-              public alertCtrl: AlertController,
               public navParams: NavParams) {
   }
 

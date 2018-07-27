@@ -1,0 +1,52 @@
+page-login {
+  .header-ios .toolbar-ios:last-child .toolbar-background-ios{
+    background-color: #ffffff
+  }
+      .get-code{
+        color: #000000;
+        position: absolute;
+        right: -10px;
+        top:-10px;
+        width: 50%;
+        height: 120%;
+        background-color: #EFEFEF;
+        span{
+            position: absolute;
+            top:30%;
+            left: 30%;
+        }
+      }
+      .setting-phone-form{
+        margin-top: 20px;
+        ion-item{
+          width: 90vw;
+          margin:0 5vw 20px 5vw;
+          border: #e7e1e1 1px solid;
+          border-radius:40px;
+        }
+      }
+
+      .forget-psd{
+        text-align: right;
+        width: 90vw;
+        margin-right: 5vw;
+        padding-top: 0;
+        padding-bottom: 0;
+        color:#8c8c8c;
+        font-size: 13px;
+      }
+
+      .login-btn{
+          padding: 0 16px;
+          button{
+            height:45px;
+        }
+      }
+
+      .tip-btn{
+        font-size: 14px;
+      }
+      .line{
+          color: #e7e1e1;
+      }
+}
