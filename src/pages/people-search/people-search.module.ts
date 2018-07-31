@@ -2,7 +2,7 @@ import {NgModule} from '@angular/core';
 import {IonicPageModule} from 'ionic-angular';
 import {PeopleSearchPage} from './people-search';
 import {SharedModule} from "../../shared/shared.module";
-import {PeopleDetailComponent} from "./people-detail/people-detail";
+import {PeopleDetailComponent} from "../../shared/components/people-detail/people-detail";
 
 @NgModule({
   declarations: [
@@ -13,9 +13,7 @@ import {PeopleDetailComponent} from "./people-detail/people-detail";
     IonicPageModule.forChild(PeopleSearchPage),
     SharedModule
   ],
-  entryComponents: [
-    PeopleDetailComponent
-  ]
+  entryComponents:[PeopleDetailComponent]
 })
 export class PeopleSearchPageModule {
 }

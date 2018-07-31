@@ -71,3 +71,14 @@ city-picker ,ion-datetime,ion-multi-picker{
 .toolbar-ios .segment-button{
   max-width: 100%;
 }
+
+
+//action sheet
+ion-action-sheet{
+  .button-inner{
+    color: #212121;
+    font-size: 15px;
+  }
+}
+
+

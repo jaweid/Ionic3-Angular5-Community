@@ -17,11 +17,16 @@ export class AppPeopleSearchComponent {
   placeholderPicture = DefaultAvatar;
   @Input() peopleSearchList: PeopleSearch[] = [];
   @Output() clickPeopleItem: EventEmitter<undefined> = new EventEmitter();
+  @Output() onPressItem: EventEmitter<undefined> = new EventEmitter();
 
   constructor() {
   }
 
   clickItem(item) {
     this.clickPeopleItem.emit(item);
+  }
+
+  onPress(item) {
+    this.onPressItem.emit(item);
   }
 }

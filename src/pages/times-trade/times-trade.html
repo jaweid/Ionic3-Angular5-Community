@@ -14,9 +14,26 @@
 
 
 <ion-content>
+  <ion-row class="sort-nav">
+    <ion-col tappable (click)="presentPopover('distance')">
+      距离
+      <ion-icon name="md-arrow-dropdown" color="dark"></ion-icon>
+    </ion-col>
+    <ion-col tappable (click)="presentPopover('reading')">
+      阅读量
+      <ion-icon name="md-arrow-dropdown" color="dark"></ion-icon>
+    </ion-col>
+    <ion-col tappable (click)="presentPopover('update')">
+      更新时间
+      <ion-icon name="md-arrow-dropdown" color="dark"></ion-icon>
+    </ion-col>
+  </ion-row>
+
   <app-times-trade
     [timeList]="timeList"
     (clickTimesItem)="toTimesDetailPage($event)"
+    (clickTimesBuy)="toTimesDetailPage($event)"
+    (clickTimesComment)="toTimesDetailPage($event)"
   ></app-times-trade>
 
 </ion-content>

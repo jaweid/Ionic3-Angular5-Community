@@ -1,5 +1,11 @@
 page-order {
-  .header-ios .toolbar-ios:last-child .toolbar-background-ios{
+
+  //toolbar
+  .toolbar-ios{
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .toolbar-content{
     background-color: #ffffff
   }
 }

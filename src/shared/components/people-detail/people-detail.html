@@ -1,0 +1,63 @@
+<!--
+  Generated template for the PeopleSearchPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{peopleDetail.title}}</ion-title>
+    <div float-right class="dianzan">
+      <img src="assets/imgs/dianzan.png">
+      <img src="assets/imgs/star-dark.png">
+
+    </div>
+
+  </ion-navbar>
+
+
+</ion-header>
+
+
+<ion-content padding>
+  <div class="people-top-area">
+    <p class="title" text-wrap>{{peopleDetail.title}}
+      <button ion-button  color="theme">
+        <img src="assets/imgs/share.png">
+        分享
+      </button>
+    </p>
+    <p class="type">{{mockDetailData.type}}</p>
+    <p>
+      <span class="people-label" *ngFor="let label of mockDetailData.labels">{{label}}</span>
+      <span float-right class="publish-date">发布日期：{{peopleDetail.date}}</span>
+    </p>
+  </div>
+  <img class="detail-img" [src]="mockDetailData.img">
+  <p text-wrap class="description">{{mockDetailData.description}}</p>
+
+  <div class="other-way-login">
+    <span class="line"></span>
+    <span class="txt">精彩评论</span>
+    <span class="line"></span>
+  </div>
+
+  <div class="comment" *ngFor="let comment of mockDetailData.comments">
+    <ion-item>
+      <ion-avatar item-start>
+        <img [src]="comment.avatar">
+      </ion-avatar>
+      <p class="name">{{comment.alias}}</p>
+      <p class="date">{{comment.date}}</p>
+    </ion-item>
+    <p class="content">{{comment.content}}</p>
+  </div>
+</ion-content>
+<ion-footer>
+  <ion-item>
+    <ion-input></ion-input>
+
+    <button ion-button item-end color="theme">发送</button>
+  </ion-item>
+</ion-footer>

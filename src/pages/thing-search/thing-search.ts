@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {IonicPage, NavController, NavParams, PopoverController} from 'ionic-angular';
 import {PeopleSearch} from "../../shared/resources/people-search/people-search";
+import {PeopleDetailComponent} from "../../shared/components/people-detail/people-detail";
+import {PostSortForSearchPerson, SortOptions} from "../../shared/consts/const";
 
 /**
  * Generated class for the ThingSearchPage page.
@@ -44,11 +46,33 @@ export class ThingSearchPage {
       commentsNumber: '988'
     }];
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController,
+              public popoverCtrl: PopoverController,
+              public navParams: NavParams) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad ThingSearchPage');
+
+  toThingDetailPage(item) {
+    this.navCtrl.push(PeopleDetailComponent,{detail:item})
   }
 
+  public showFilterModal;
+  public filterModel: any = {};
+
+  presentPopover(value) {
+    if (this.showFilterModal) {
+      this.showFilterModal.dismiss();
+    } else {
+      let data = [];
+      value === 'type' ? data = PostSortForSearchPerson.options : data = SortOptions;
+      this.showFilterModal = this.popoverCtrl.create('SortModalPage', {list: data,currentFilter:this.filterModel[value]}, {cssClass: 'sort-inset-modal'});
+      this.showFilterModal.present();
+      this.showFilterModal.onDidDismiss((data) => {
+        if (data) {
+          this.filterModel[value] = data.filterData.value;
+        }
+        this.showFilterModal = null;
+      })
+    }
+  }
 }

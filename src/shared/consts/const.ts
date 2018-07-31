@@ -112,38 +112,94 @@ export const PostSortForSearchPerson = {
     },
     {
       text: '娱乐休闲',
-      value: '1'
+      value: '2'
     },
     {
       text: '公益服务',
-      value: '1'
+      value: '3'
     },
     {
       text: '战友情谊',
-      value: '1'
+      value: '4'
     },
     {
       text: '工作搭档',
-      value: '1'
+      value: '5'
     }
   ]
 };
 
+export const SortOptions = [
+  {
+    text: '默认排序',
+    value: '1'
+  },
+  {
+    text: '最新发布',
+    value: '2'
+  },
+  {
+    text: '离我最近',
+    value: '3'
+  }
+];
+
+export const Distance = [
+  {
+    text: '智能排序',
+    value: '1'
+  },
+  {
+    text: '远——>近',
+    value: '2'
+  },
+  {
+    text: '近——>远',
+    value: '3'
+  }
+];
+
+export const Reading = [
+  {
+    text: '智能排序',
+    value: '1'
+  },
+  {
+    text: '高——>低',
+    value: '2'
+  },
+  {
+    text: '低——>高',
+    value: '3'
+  }
+];
+
+export const UpdateTime = [
+  {
+    text: '智能排序',
+    value: '1'
+  },
+  {
+    text: '最新',
+    value: '2'
+  }
+];
+
 
 export const PAY_TYPE_LIST = [
   {
-    logo: 'assets/imgs/weixin-logo.jpg',
+    logo: 'assets/imgs/wexin.png',
     name: '微信支付',
     id: 0
   },
   {
-    logo: 'assets/imgs/zhifubao-logo.jpg',
+    logo: 'assets/imgs/zhifubao.png',
     name: '支付宝支付',
     id: 1
   },
-  // {
-  //   logo: 'assets/imgs/yuer.png',
-  //   name: '余额支付',
-  //   id: 2
-  // }
+  {
+    logo: 'assets/imgs/zhifubao.png',
+    name: '余额支付',
+    id: 2
+  }
 ];

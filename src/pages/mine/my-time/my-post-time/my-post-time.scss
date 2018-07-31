@@ -1,0 +1,30 @@
+my-post-time {
+  .time-title {
+    color: #212121;
+    font-size: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .expired{
+    font-size: 12px;
+    color: #969696;
+    float: right;
+  }
+  .time-content {
+    color: #212121;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  .time-period{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .time-label{
+    color: #ffffff;
+    background-color: #FFB42A;
+    font-size: 12px;
+    padding: 3px 10px;
+    border-radius: 5px;
+  }
+}

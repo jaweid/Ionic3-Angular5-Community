@@ -1,0 +1,61 @@
+<!--
+  Generated template for the MyTimePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>订单详情</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <ion-item-group tappable class="order_group">
+    <p class="id_status">
+      <span class="order-sn">
+        订单号:{{orderDetail.orderSN}}
+      </span>
+
+      <span float-right>
+        <span class="status-label">订单状态</span>:<span class="status">{{orderDetail.status}}</span>
+      </span>
+    </p>
+
+    <ion-item class="item-title-img">
+      <ion-thumbnail item-start>
+        <img [src]="orderDetail.img">
+      </ion-thumbnail>
+      <h4>{{orderDetail.title}}</h4>
+      <p ion-text>
+        <span class="price-single" float-right>￥{{orderDetail.price}}元/{{orderDetail.unit}}</span>
+      </p>
+    </ion-item>
+
+    <ion-item class="app-item-border">
+      <span class="detail-text">数量：{{orderDetail.volume}}</span>
+    </ion-item>
+    <ion-item class="app-item-border">
+      <span class="detail-text">总价：¥{{orderDetail.sumPrice}}</span>
+    </ion-item>
+
+
+    <ion-item class="operation-order">
+      <ion-row item-end>
+        <button ion-button outline small color="dark"
+                *ngIf="orderDetail.statusCode==='1'">取消订单
+        </button>
+        <button class="order-btn" ion-button small color="orangeBtn"
+                outline
+                *ngIf="orderDetail.statusCode==='3'">确认
+        </button>
+
+      </ion-row>
+    </ion-item>
+  </ion-item-group>
+
+
+</ion-content>

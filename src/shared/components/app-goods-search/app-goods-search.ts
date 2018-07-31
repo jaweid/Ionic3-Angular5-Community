@@ -8,6 +8,7 @@ import {GoodsSearch} from "../../resources/goods-search/goods-search";
 export class AppGoodsSearchComponent {
   @Input() goodsSearchList: GoodsSearch[] = [];
   @Output() clickGoodsItem: EventEmitter<undefined> = new EventEmitter();
+  @Output() onPressItem: EventEmitter<undefined> = new EventEmitter();
 
   constructor() {
   }
@@ -15,5 +16,7 @@ export class AppGoodsSearchComponent {
   clickItem(item) {
     this.clickGoodsItem.emit(item);
   }
-
+  onPress(item) {
+    this.onPressItem.emit(item);
+  }
 }

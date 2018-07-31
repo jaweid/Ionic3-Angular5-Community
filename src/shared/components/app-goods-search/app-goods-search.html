@@ -1,5 +1,7 @@
 <div *ngFor="let item of goodsSearchList" class="time-item">
-  <ion-item tappable (click)="clickItem(item)">
+  <p class="collection-date" *ngIf="item.collectionDate">收藏于{{item.collectionDate}}</p>
+
+  <ion-item tappable (click)="clickItem(item)" (press)="onPress(item)">
     <ion-avatar item-start class="time-item-avatar">
       <img [src]="item.img">
     </ion-avatar>
@@ -10,8 +12,8 @@
       {{item.address}}
     </p>
     <p class="price">
-      <span >¥ {{item.price}}</span>
-      <img class="phone" src="assets/imgs/home/icon/phone-outline.png">
+      <span>¥ {{item.price}}</span>
+      <img *ngIf="!item.collectionDate" class="phone" src="assets/imgs/home/icon/phone-outline.png">
     </p>
     <ion-row class="time-item-detail-bottom">
       <ion-col col-6>

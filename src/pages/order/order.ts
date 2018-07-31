@@ -65,7 +65,7 @@ export class OrderPage {
         id:'1',
         orderSN:'489784654687846546',
         status:'待支付',
-        statusCode:'1',
+        statusCode:'4',
         img:'assets/imgs/mockdata/user1.jpg',
         title:"手把手教你从零开始弹古筝",
         price:'200',

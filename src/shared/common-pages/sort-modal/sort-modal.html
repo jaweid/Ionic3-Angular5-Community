@@ -1,0 +1,5 @@
+<div class="sort-content-list">
+  <ion-item *ngFor="let item of filterList" tappable (click)="choose(item)">{{item.text}}
+    <ion-icon name="md-checkmark" color="dark" style="margin-left: 10px" *ngIf="currentItem ===item.value"></ion-icon>
+  </ion-item>
+</div>

@@ -9,4 +9,96 @@
 
 <ion-content>
 
+  <div class="time-item">
+    <ion-item>
+      <ion-avatar item-start class="time-item-avatar">
+        <img [src]="item.header?item.header:placeholderPicture">
+      </ion-avatar>
+      <div>
+        <div class="time-item-detail-top">
+          <div class="time-item-detail-top-name" text-wrap>{{item.name}}</div>
+        </div>
+
+        <div class="time-item-detail-bottom">
+          <img style="width: 17px;height: 8px" src="assets/imgs/home/icon/viewer.png">
+          <span class="number">{{item.viewNumber}}</span>
+          <img style="width: 14px;height: 12px" src="assets/imgs/home/icon/lover.png">
+          <span>月卖{{item.sellNumber}}单</span>
+          <span float-right class="time-item-detail-top-price">{{item.price}}元/小时</span>
+        </div>
+      </div>
+    </ion-item>
+
+    <div class="more-info">
+      <p>日期：{{item.startDate+' - '+item.endDate}}</p>
+
+      <p>时间：{{item.startTime+' - '+item.endTime}}</p>
+      <p style="margin-top: 10px">
+        <ion-icon name="app-pin" color="gray"></ion-icon>
+        {{item.address}}
+      </p>
+    </div>
+
+
+  </div>
+
+  <button ion-item (click)="chooseAmountModal()">
+    时间数量选择
+    <span class="end-dark-title" item-end>2</span>
+  </button>
+
+  <ion-row class="time-btn-group">
+    <ion-col class="detail" (click)="type='detail'">
+      <span [ngClass]="{'time-choose':type==='detail'}">时间详情</span>
+    </ion-col>
+    <ion-col (click)="type='comments'">
+      <span [ngClass]="{'time-choose':type==='comments'}"> 时间评价(30)</span>
+    </ion-col>
+  </ion-row>
+
+  <ng-container *ngIf="type==='detail'">
+    <img class="detail-img" [src]="item.img">
+    <p padding text-wrap class="description">{{item.description}}</p>
+  </ng-container>
+
+  <ng-container *ngIf="type==='comments'">
+    <div class="comment" *ngFor="let comment of item.comments">
+      <ion-item>
+        <ion-avatar item-start>
+          <img [src]="comment.avatar">
+        </ion-avatar>
+        <p class="name">{{comment.alias}}</p>
+        <p class="date">
+          <span class="date-text">{{comment.date}}</span>
+          <ion-icon name="heart" color="heart" *ngFor="let item of comment.star|generateNumber"></ion-icon>
+        </p>
+
+
+      </ion-item>
+      <p class="content">{{comment.content}}</p>
+    </div>
+
+    <div class="get-all-comments">
+      <button ion-button block round color="white">查看全部评价</button>
+    </div>
+  </ng-container>
+
+
 </ion-content>
+
+<ion-footer class="time-footer">
+  <ion-row>
+    <ion-col col-2 text-center>
+      <img src="assets/imgs/star.png">
+    </ion-col>
+    <ion-col col-2 text-center>
+      <img src="assets/imgs/home/icon/phone-outline.png" tappable (click)="presentActionSheet()">
+    </ion-col>
+    <ion-col text-center col-4>
+      TA的其他时间
+    </ion-col>
+    <ion-col text-center col-4>
+      <span class="buy" (click)="buyNow()">点击购买</span>
+    </ion-col>
+  </ion-row>
+</ion-footer>

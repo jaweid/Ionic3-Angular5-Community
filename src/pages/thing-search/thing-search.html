@@ -13,7 +13,21 @@
 </ion-header>
 
 
-<ion-content >
-  <app-people-search [peopleSearchList]="peopleSearchList"></app-people-search>
+<ion-content>
+  <ion-row class="sort-nav">
+    <ion-col tappable (click)="presentPopover('type')">
+      类别
+      <ion-icon name="md-arrow-dropdown" color="dark"></ion-icon>
+    </ion-col>
+    <ion-col tappable (click)="presentPopover('sort')">
+      排序
+      <ion-icon name="md-arrow-dropdown" color="dark"></ion-icon>
+    </ion-col>
+  </ion-row>
+
+  <app-people-search
+    [peopleSearchList]="peopleSearchList"
+    (clickPeopleItem)="toThingDetailPage($event)"
+  ></app-people-search>
 
 </ion-content>

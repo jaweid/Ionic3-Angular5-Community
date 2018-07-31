@@ -1,0 +1,23 @@
+time-pay {
+  .pay-group {
+    margin-bottom: 10px;
+    .pay-text {
+      margin: 4px 0 0 10px;
+      position: absolute;
+    }
+    img {
+      width: 2rem;
+      height: 2rem;
+      vertical-align: middle;
+    }
+  }
+
+
+
+}
+
+.custom-pay-psd-modal {
+  background-color: rgba(0, 0, 0, .5) !important;
+  transition: opacity .25s ease-in-out;
+  padding: 35vh 10vw
+}

@@ -22,10 +22,10 @@ import {PicViewerComponentModule} from "./components/pic-viewer-component/pic-vi
 import {MultiPickerModule} from "ion-multi-picker";
 import {CityPickerModule} from "ionic2-city-picker";
 import {AppOrderComponent} from "./components/app-order/app-order";
-import {AppMineCollectionsComponent} from "./components/app-mine-collections/app-mine-collections";
-import {TimeDetailComponent} from "../pages/times-trade/time-detail/time-detail";
 
-import { CalendarModule } from "ion2-calendar";
+import {CalendarModule} from "ion2-calendar";
+import {GenerateNumberPipe} from "./pipes/generate-number/generate-number";
+import {AppTimesCollectionsComponent} from "./components/app-times-collections/app-times-collections";
 
 @NgModule({
   imports: [
@@ -47,9 +47,9 @@ import { CalendarModule } from "ion2-calendar";
     AppSecondaryMenuComponent,
     AppPostComponent,
     AppOrderComponent,
-    AppMineCollectionsComponent,
+    AppTimesCollectionsComponent,
 
-    TimeDetailComponent
+    GenerateNumberPipe
   ],
   exports: [
     AppToastWithIconComponent,
@@ -62,20 +62,19 @@ import { CalendarModule } from "ion2-calendar";
     AppSecondaryMenuComponent,
     AppPostComponent,
     AppOrderComponent,
-    AppMineCollectionsComponent,
-
-    TimeDetailComponent,
+    AppTimesCollectionsComponent,
 
     HttpClientModule,
     PicViewerComponentModule,
     MultiPickerModule,
     CityPickerModule,
-    CalendarModule
+    CalendarModule,
+
+    GenerateNumberPipe
 
   ],
   entryComponents: [
     AppToastWithIconComponent,
-    TimeDetailComponent
   ]
 })
 

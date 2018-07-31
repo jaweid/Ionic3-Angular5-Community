@@ -1,7 +1,9 @@
 import {Component} from '@angular/core';
-import {IonicPage, NavController, NavParams} from 'ionic-angular';
+import {IonicPage, NavController, NavParams, PopoverController} from 'ionic-angular';
 import {GoodsSearch} from "../../shared/resources/goods-search/goods-search";
 import {GoodsDetailComponent} from "./goods-detail/goods-detail";
+import {PostSortForSearchPerson, SortOptions} from "../../shared/consts/const";
+import {SortCityModalPage} from "../../shared/common-pages/sort-city-modal/sort-city-modal";
 
 /**
  * Generated class for the GoodsSearchPage page.
@@ -52,7 +54,12 @@ export class GoodsSearchPage {
     }
   ];
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  type = 'lose';
+  priceFilter = 'down';
+
+  constructor(public navCtrl: NavController,
+              public popoverCtrl: PopoverController,
+              public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
@@ -60,6 +67,48 @@ export class GoodsSearchPage {
 
   viewGoodsDetailPage(value) {
     this.navCtrl.push(GoodsDetailComponent);
+  }
+
+  public showFilterModal;
+  public currentTitle='寻物';
+  public filterModel: any = {};
+  toggleTitle(){
+
+  }
+  presentPopover(value) {
+    if (this.showFilterModal) {
+      this.showFilterModal.dismiss();
+    } else {
+      let data = [];
+      let page = 'SortModalPage';
+
+      switch (value) {
+        case 'type':
+          data = PostSortForSearchPerson.options;
+          break;
+        case 'sort':
+          data = SortOptions;
+          break;
+        case 'city':
+          page = 'SortCityModalPage';
+          break;
+      }
+      this.showFilterModal = this.popoverCtrl.create(page, {
+        list: data,
+        currentFilter: this.filterModel[value]
+      }, {cssClass: 'sort-inset-modal'});
+      this.showFilterModal.present();
+      this.showFilterModal.onWillDismiss((data) => {
+        if (data) {
+          this.filterModel[value] = data.filterData.value;
+        }
+        this.showFilterModal = null;
+      })
+    }
+  }
+
+  togglePrice() {
+    this.priceFilter === 'down' ? this.priceFilter = 'up' : this.priceFilter = 'down';
   }
 
 }

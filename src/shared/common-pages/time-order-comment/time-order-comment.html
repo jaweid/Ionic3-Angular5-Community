@@ -1,0 +1,65 @@
+<!--
+  Generated template for the TimeOrderCommentPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>评价</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <div class="app-form">
+    <div class="time-item">
+      <ion-item tappable>
+        <ion-avatar item-start class="time-item-avatar">
+          <img [src]="timeDetail.img">
+        </ion-avatar>
+        <div>
+          <div class="time-item-detail-top">
+            <ion-row>
+              <ion-col style="padding-left: 0" col-9 class="time-item-detail-top-name">{{timeDetail.title}}</ion-col>
+              <ion-col col-3 class="time-item-detail-top-price">{{timeDetail.price}}元/小时</ion-col>
+            </ion-row>
+          </div>
+
+          <div class="time-item-detail-bottom">
+            <span class="number">数量：{{timeDetail.volume}}</span>
+          </div>
+        </div>
+
+
+      </ion-item>
+    </div>
+
+    <ion-item class="time-heart">
+      <span >友好度：</span>
+      <ion-icon name="heart" [color]="item.isChoose?'heart':'lightBtn'"
+                *ngFor="let item of heartOptions;let i=index"
+               (click)="toggleHeart(i)"
+      ></ion-icon>
+    </ion-item>
+
+    <ion-item>
+      <ion-textarea class="form-textarea" value="" placeholder="请输入描述"></ion-textarea>
+    </ion-item>
+
+    <div class="add-img">
+      <p>上传照片:</p>
+      <page-select-pic [(fileObjList)]="fileObjList" [max]="6" [destinationType]="0"></page-select-pic>
+      <p class="tip">最多上传6张照片</p>
+
+    </div>
+
+    <div padding>
+      <button ion-button block padding color="theme">提交</button>
+    </div>
+
+  </div>
+
+</ion-content>

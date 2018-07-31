@@ -10,15 +10,21 @@ import {ChooseBankListPage} from './choose-bank-list/choose-bank-list';
 import {MyBankCardsComponent} from "./my-bank-cards/my-bank-cards";
 import {WithdrawCompletedComponent} from "./withdraw-completed/withdraw-completed";
 import {ScoreRulesComponent} from "./score-rules/score-rules";
+import {PaySettingComponent} from "./pay-setting/pay-setting";
 @NgModule({
   declarations: [
     MineAccountPage,WithdrawPage,
     WithdrawCompletedComponent,ScoreRulesComponent,
-    ChooseBankCardPage,AddBankCardPage,AccountRechargePage,WithdrawRecordPage,ChooseBankListPage,MyBankCardsComponent
+    ChooseBankCardPage,AddBankCardPage,AccountRechargePage,
+    WithdrawRecordPage,ChooseBankListPage,MyBankCardsComponent,
+    PaySettingComponent
   ],
   entryComponents:[MineAccountPage,WithdrawPage,
     WithdrawCompletedComponent,ScoreRulesComponent,
-    ChooseBankCardPage,AddBankCardPage,AccountRechargePage,WithdrawRecordPage,ChooseBankListPage,MyBankCardsComponent],
+    ChooseBankCardPage,AddBankCardPage,AccountRechargePage,
+    WithdrawRecordPage,ChooseBankListPage,MyBankCardsComponent,
+    PaySettingComponent
+  ],
   imports: [
     IonicPageModule.forChild(MineAccountPage),
   ],

@@ -6,6 +6,7 @@ import {RealNameCertifyComponent} from "./real-name-certify/real-name-certify";
 import {MyCollectionComponent} from "./my-collection/my-collection";
 import {MyPostComponent} from "./my-post/my-post";
 import {SharedModule} from "../../shared/shared.module";
+import {SignInRecordsComponent} from "./sign-in-records/sign-in-records";
 
 @NgModule({
   declarations: [
@@ -13,13 +14,15 @@ import {SharedModule} from "../../shared/shared.module";
     MineInfoAliasPage,
     RealNameCertifyComponent,
     MyCollectionComponent,
-    MyPostComponent
+    MyPostComponent,
+    SignInRecordsComponent
   ],
   entryComponents: [
     MineInfoAliasPage,
     RealNameCertifyComponent,
     MyCollectionComponent,
-    MyPostComponent
+    MyPostComponent,
+    SignInRecordsComponent
   ],
   imports: [
     IonicPageModule.forChild(MinePage),

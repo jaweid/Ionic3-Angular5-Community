@@ -36,12 +36,13 @@ $colors: (
   white: #ffffff,
   orangeBtn:#FC9400,
   ligter:#929292,
-  theme:#F5EC5C
+  theme:#F5EC5C,
+  heart:#FB4176,
+  lightBtn:#969696
 );
 
-$text-dark:rgba(51,51,51,1);
-$text-gray:#AFAFAF;
-
+$text-dark: rgba(51, 51, 51, 1);
+$text-gray: #AFAFAF;
 
 // App iOS Variables
 // --------------------------------------------------
@@ -51,6 +52,7 @@ $content-ios-outer-background: #f4f4f4;
 $tabs-ios-tab-text-color-active: #000000;
 $tabs-ios-tab-icon-color-active: #F5EC5C;
 
+$popover-ios-width: 100vw;
 // App Material Design Variables
 // --------------------------------------------------
 // Material Design only Sass variables can go here
@@ -79,6 +81,7 @@ $tabs-ios-tab-icon-color-active: #F5EC5C;
 .ion-ios-app-tab-mine:before {
   content: url('../assets/imgs/tabs/tab_mine_on.png');
 }
+
 .ion-ios-app-tab-mine-outline:before {
   content: url('../assets/imgs/tabs/tab_mine_off.png');
 }

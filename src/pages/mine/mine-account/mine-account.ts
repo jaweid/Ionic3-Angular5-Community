@@ -5,6 +5,7 @@ import {WithdrawRecordPage} from './withdraw-record/withdraw-record';
 import {MyBankCardsComponent} from "./my-bank-cards/my-bank-cards";
 import {ChooseBankCardPage} from "./choose-bank-card/choose-bank-card";
 import {ScoreRulesComponent} from "./score-rules/score-rules";
+import {PaySettingComponent} from "./pay-setting/pay-setting";
 
 
 @IonicPage()
@@ -41,5 +42,9 @@ export class MineAccountPage {
   }
   scoreRulesPage(){
     this.navCtrl.push(ScoreRulesComponent);
+  }
+
+  paySetting(){
+    this.navCtrl.push(PaySettingComponent);
   }
 }

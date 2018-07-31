@@ -5,6 +5,9 @@ import {HomeNavList} from "../../shared/consts/const";
 import {Time} from "../../shared/resources/timeTrade/time";
 import {PeopleSearch} from "../../shared/resources/people-search/people-search";
 import {TimeDetailComponent} from "../times-trade/time-detail/time-detail";
+import {TimePayComponent} from "../times-trade/time-detail/time-pay/time-pay";
+import {GoodsDetailComponent} from "../goods-search/goods-detail/goods-detail";
+import {PeopleDetailComponent} from "../../shared/components/people-detail/people-detail";
 
 /**
  * Generated class for the HomePage page.
@@ -116,4 +119,9 @@ export class HomePage {
   toTimesDetailPage(item) {
     this.navCtrl.push(TimeDetailComponent, {detail: item})
   }
+
+  toPeopleDetailPage(item) {
+    this.navCtrl.push(PeopleDetailComponent,{detail:item})
+  }
+
 }

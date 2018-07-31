@@ -1,14 +1,10 @@
 import {Component} from '@angular/core';
-import {IonicPage, NavController, NavParams} from 'ionic-angular';
+import {IonicPage, NavController, NavParams, PopoverController} from 'ionic-angular';
 import {PeopleSearch} from "../../shared/resources/people-search/people-search";
-import {PeopleDetailComponent} from "./people-detail/people-detail";
+import {PeopleDetailComponent} from "../../shared/components/people-detail/people-detail";
+import {SortModalPage} from "../../shared/common-pages/sort-modal/sort-modal";
+import {PostSortForSearchPerson, SortOptions} from "../../shared/consts/const";
 
-/**
- * Generated class for the PeopleSearchPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
 
 @IonicPage()
 @Component({
@@ -45,13 +41,37 @@ export class PeopleSearchPage {
       commentsNumber: '988'
     }];
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController,
+              public popoverCtrl: PopoverController,
+              public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
   }
 
   toPeopleDetailPage(item) {
-    this.navCtrl.push(PeopleDetailComponent,{detail:item})
+    this.navCtrl.push(PeopleDetailComponent, {detail: item})
   }
+
+
+  public showFilterModal;
+  public filterModel: any = {};
+
+  presentPopover(value) {
+    if (this.showFilterModal) {
+      this.showFilterModal.dismiss();
+    } else {
+      let data = [];
+      value === 'type' ? data = PostSortForSearchPerson.options : data = SortOptions;
+      this.showFilterModal = this.popoverCtrl.create('SortModalPage', {list: data,currentFilter:this.filterModel[value]}, {cssClass: 'sort-inset-modal'});
+      this.showFilterModal.present();
+      this.showFilterModal.onWillDismiss((data) => {
+        if (data) {
+          this.filterModel[value] = data.filterData.value;
+        }
+        this.showFilterModal = null;
+      })
+    }
+  }
+
 }

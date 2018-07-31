@@ -1,0 +1,72 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>时间支付</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+
+  <div class="app-border-form">
+    <ion-item>
+      单价
+      <span class="end-dark-title" item-end>¥10元/小时</span>
+    </ion-item>
+
+    <ion-item>
+      数量 <span item-end class="subtitle">
+  <ion-row class="addOrRemoveRow">
+  <ion-col>
+  <button
+    small ion-button outline icon-only color="dark">
+  <ion-icon name="ios-remove"></ion-icon>
+  </button>
+  </ion-col>
+  <ion-col>
+  <p>1</p>
+  </ion-col>
+  <ion-col>
+  <button
+    small ion-button outline icon-only color="dark">
+  <ion-icon name="ios-add"></ion-icon>
+  </button>
+  </ion-col>
+  </ion-row>
+    </span>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>付款方式</ion-label>
+    </ion-item>
+    <div radio-group class="pay-group" [(ngModel)]="choosedPayType">
+      <ion-item *ngFor="let item of payList">
+        <ion-label>
+          <img [src]="item.logo">
+          <span class="pay-text"> {{item.name}}</span>
+        </ion-label>
+        <ion-radio color="dark" mode="md" [value]="item.id" tappable></ion-radio>
+      </ion-item>
+    </div>
+
+    <ion-item>
+      消费金额
+      <span class="end-dark-title" item-end>¥10</span>
+    </ion-item>
+
+    <ion-item>
+      实付金额
+      <span class="end-dark-title" item-end>¥10</span>
+    </ion-item>
+
+
+  </div>
+
+
+  <div padding>
+    <button ion-button block color="theme" (click)="confirmBuy()">确认支付</button>
+  </div>
+
+
+</ion-content>

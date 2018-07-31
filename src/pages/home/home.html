@@ -20,16 +20,21 @@
 
   <app-times-trade [timeList]="timeList"
                    (clickTimesItem)="toTimesDetailPage($event)"
+                   (clickTimesOthers)="nav('TimesTradePage')"
+                   (clickTimesBuy)="toTimesDetailPage($event)"
+                   (clickTimesComment)="toTimesDetailPage($event)"
   ></app-times-trade>
 
   <img class="ad_middle" src="assets/imgs/mockdata/home_ad_middle.jpg">
 
   <div class="app-divider" text-center>
     <p>寻推荐
-      <span>更多>></span>
+      <span tappable (click)="nav('PeopleSearchPage')">更多>></span>
     </p>
   </div>
 
-  <app-people-search [peopleSearchList]="peopleSearchList"></app-people-search>
+  <app-people-search
+    (clickPeopleItem)="toPeopleDetailPage($event)"
+    [peopleSearchList]="peopleSearchList"></app-people-search>
 
 </ion-content>

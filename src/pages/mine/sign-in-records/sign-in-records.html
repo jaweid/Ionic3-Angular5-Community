@@ -1,0 +1,19 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>签到记录</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+
+  <div class="app-border-form">
+    <ion-item *ngFor="let item of record">
+      恭喜您已连续签到{{item.text}}天!
+      <span class="subtitle" item-end>{{item.date}}</span>
+    </ion-item>
+  </div>
+
+</ion-content>

@@ -25,10 +25,12 @@ import {MineAccountPageModule} from '../pages/mine/mine-account/mine-account.mod
 import {MineAddressPageModule} from "../pages/mine/mine-address/mine-address.module";
 import {MySettingsPageModule} from "../pages/mine/my-settings/my-settings.module";
 import {LoginPageModule} from "../pages/login/login.module";
+
 import {GoodsSearchPageModule} from "../pages/goods-search/goods-search.module";
 import {ThingSearchPageModule} from "../pages/thing-search/thing-search.module";
 import {TimesTradePageModule} from "../pages/times-trade/times-trade.module";
 import {PeopleSearchPageModule} from "../pages/people-search/people-search.module";
+import {MyTimePageModule} from "../pages/mine/my-time/my-time.module";
 
 @NgModule({
   declarations: [
@@ -54,6 +56,7 @@ import {PeopleSearchPageModule} from "../pages/people-search/people-search.modul
     ThingSearchPageModule,
     TimesTradePageModule,
     PeopleSearchPageModule,
+    MyTimePageModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [

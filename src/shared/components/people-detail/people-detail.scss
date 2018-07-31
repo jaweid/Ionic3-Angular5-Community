@@ -1,0 +1,61 @@
+people-detail {
+  .dianzan{
+    img{
+      margin-right: 10px;
+      width: 20px;
+      height: 20px;
+    }
+  }
+  .people-top-area{
+    p{
+      margin: 0;
+    }
+    margin-bottom: 10px;
+  }
+  .title {
+    color: #313131;
+    font-size: 18px;
+
+    button{
+      height: 20px;
+      font-size: 12px;
+      vertical-align: middle;
+      float: right;
+      img{
+        width: 13px;
+        height: 13px;
+        margin-right: 5px;
+      }
+    }
+  }
+  .type {
+    color: #747474;
+    font-size: 14px;
+    margin: 10px 0;
+  }
+  .people-label {
+    font-size: 10px;
+    color: #ffffff;
+    background-color: #74C547;
+    padding: 0 10px;
+    border-radius: 10px;
+    margin-right: 10px;
+  }
+
+  .publish-date {
+    color: #747474;
+    font-size: 12px;
+  }
+
+  .detail-img{
+    height: 35vh;
+    width: 100%;
+  }
+
+
+
+  .description {
+    font-size: 12px;
+    color: #747474;
+  }
+}

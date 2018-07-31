@@ -7,15 +7,40 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>寻物</ion-title>
+    <ion-title>
+      {{currentTitle==='寻物'?'寻物':'二手物品'}}
+    </ion-title>
+    <ion-buttons end tappable (click)="toggleTitle()">
+      {{currentTitle==='寻物'?'二手物品':'寻物'}}
+    </ion-buttons>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content>
+  <ion-row class="sort-nav">
+    <ion-col tappable (click)="presentPopover('city')">
+      城市
+      <ion-icon name="md-arrow-dropdown" color="dark"></ion-icon>
+    </ion-col>
+    <ion-col tappable (click)="presentPopover('type')">
+      类别
+      <ion-icon name="md-arrow-dropdown" color="dark"></ion-icon>
+    </ion-col>
+    <ion-col tappable (click)="presentPopover('sort')">
+      排序
+      <ion-icon name="md-arrow-dropdown" color="dark"></ion-icon>
+    </ion-col>
+    <ion-col tappable (click)="togglePrice()">
+      价格
+      <ion-icon [name]="priceFilter==='up'?'ios-arrow-round-up':'ios-arrow-round-down'" color="dark"></ion-icon>
+    </ion-col>
+  </ion-row>
+
   <app-goods-search
     [goodsSearchList]="goodsSearchList"
     (clickGoodsItem)="viewGoodsDetailPage($event)">
   </app-goods-search>
+
 </ion-content>

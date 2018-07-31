@@ -1,3 +1,98 @@
 time-detail {
+  .time-item-avatar {
+    img {
+      width: 60px;
+      height: 60px;
+    }
+  }
+  .more-info {
+    margin-left: 70px;
+    padding-bottom: 10px;
+    p {
+      margin: 0;
+      margin-left: 20px;
+      font-size: 12px;
+      color: #848484;
+    }
 
+  }
+  .time-item-detail-top-price {
+    color: #FC9400;
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  .time-btn-group {
+    background-color: #ffffff;
+    padding: 10px 0;
+    .time-choose {
+      color: #222222;
+      border-bottom: 3px solid #F5EC5C;
+    }
+    ion-col {
+      text-align: center;
+    }
+    span {
+      color: #555555;
+      padding: 0 20px 10px 20px;
+    }
+    .detail {
+      border-right: 1px solid #EEEEEE;
+    }
+  }
+
+  .detail-img {
+    height: 35vh;
+    width: 100%;
+  }
+
+  .description {
+    font-size: 12px;
+    color: #747474;
+  }
+  .comment{
+    margin-top: 0;
+    border-bottom: 1px solid #EEEEEE;
+    .date-text{
+      margin-right: 10px;
+    }
+    ion-icon{
+      margin-right: 5px;
+    }
+  }
+
+  .get-all-comments{
+    width: 50%;
+    margin: auto;
+    button{
+      color: #969696;
+      height: 30px;
+      font-size: 14px;
+      border: 1px solid #969696;
+      margin-top: 20px;
+    }
+  }
+
+
+  .time-footer {
+    padding: 10px 0;
+    img{
+      width: 20px;
+      height: 20px;
+    }
+
+    .buy{
+      background-color: $app-theme;
+      padding: 5px 25px;
+    }
+
+  }
+
+}
+
+ion-modal.inset-modal-specification {
+  // transparent black background overlay
+  background-color: rgba(0, 0, 0, .5) !important;
+  transition: opacity .25s ease-in-out;
+  padding-top: 80vh;
 }

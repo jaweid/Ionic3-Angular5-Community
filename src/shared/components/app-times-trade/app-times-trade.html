@@ -6,7 +6,7 @@
     <div>
       <div class="time-item-detail-top">
         <ion-row>
-          <ion-col style="padding-left: 0" col-8 class="time-item-detail-top-name">{{item.name}}</ion-col>
+          <ion-col style="padding-left: 0" col-9 class="time-item-detail-top-name">{{item.name}}</ion-col>
           <ion-col col-3 class="time-item-detail-top-price">{{item.price}}元/小时</ion-col>
 
         </ion-row>
@@ -27,10 +27,10 @@
 
   <ion-row class="time-item-button">
     <ion-col col-6 text-center>
-      <button ion-button color="orangeBtn" outline round>时间评价</button>
+      <button ion-button color="orangeBtn" outline round (click)="clickComment()">时间评价</button>
     </ion-col>
     <ion-col col-6 text-center>
-      <button ion-button color="orangeBtn" outline round>时间购买</button>
+      <button ion-button color="orangeBtn" outline round (click)="clickBuy()">时间购买</button>
     </ion-col>
   </ion-row>
 
@@ -40,7 +40,7 @@
   </div>
 
   <div style="text-align: right">
-    <button ion-button color="dark" outline round class="other-time">TA的其他时间</button>
+    <button ion-button color="dark" outline round class="other-time" (click)="clickOthers()">TA的其他时间</button>
   </div>
 
 </div>

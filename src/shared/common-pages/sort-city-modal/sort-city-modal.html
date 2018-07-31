@@ -1,0 +1,9 @@
+<div class="sort-content-list">
+
+  <ion-item-group *ngFor="let item of filterList" >
+    <ion-item-divider color="light">{{item.title}}</ion-item-divider>
+    <ion-item tappable *ngFor="let city of item.cities" (click)="choose(city)">{{city.text}}
+      <ion-icon name="md-checkmark" color="dark" style="margin-left: 10px" *ngIf="currentItem ===city.value"></ion-icon>
+    </ion-item>
+  </ion-item-group>
+</div>

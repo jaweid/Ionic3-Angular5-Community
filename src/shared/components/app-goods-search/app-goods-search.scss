@@ -1,7 +1,5 @@
 app-goods-search {
   .time-item {
-    background-color: #ffffff;
-    margin-bottom: 10px;
     ion-item {
       padding:0 9px;
     }
@@ -10,7 +8,6 @@ app-goods-search {
       img {
         width: 33vw;
         height: 24vw;
-        border-radius: 5px;
       }
     }
     .item-ios.item-block .item-inner .label{
@@ -45,15 +42,9 @@ app-goods-search {
     &-detail-bottom {
       position: absolute;
       bottom: 5px;
+      right: 5px;
       .number {
         margin-right: 5px;
-      }
-      span {
-        font-size: 12px;
-        color: #929292;
-      }
-      img{
-        vertical-align: middle;
       }
     }
 

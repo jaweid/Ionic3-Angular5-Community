@@ -5,8 +5,8 @@ import {PostSearchPeopleComponent} from "./post-search-people/post-search-people
 import {PostSearchThingComponent} from "./post-search-thing/post-search-thing";
 import {PostSecondaryHandComponent} from "./post-secondary-hand/post-secondary-hand";
 import {PostSecondaryLostComponent} from "./post-secondary-lost/post-secondary-lost";
-import {PostSecondaryTimeComponent} from "./post-secondary-time/post-secondary-time";
 import {SharedModule} from "../../shared/shared.module";
+import {PostSecondaryTimeComponent} from "./post-secondary-time/post-secondary-time";
 
 @NgModule({
   declarations: [

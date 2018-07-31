@@ -47,7 +47,7 @@
                 *ngIf="item.statusCode==='3'">确认
         </button>
         <button class="order-btn" ion-button small color="orangeBtn"
-                outline
+                outline (click)="comment(item)"
                 *ngIf="item.statusCode==='4'">去评价
         </button>
 

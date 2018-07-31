@@ -1,0 +1,29 @@
+<ion-content>
+  <span class="close-btn" tappable (click)="closeModal()">X</span>
+
+  <div class="app-form">
+    <ion-item>
+      时间数量选择 <span item-end class="subtitle">
+  <ion-row class="addOrRemoveRow">
+  <ion-col>
+  <button
+    small ion-button outline icon-only color="dark">
+  <ion-icon name="ios-remove"></ion-icon>
+  </button>
+  </ion-col>
+  <ion-col>
+  <p>1</p>
+  </ion-col>
+  <ion-col>
+  <button
+    small ion-button outline icon-only color="dark">
+  <ion-icon name="ios-add"></ion-icon>
+  </button>
+  </ion-col>
+  </ion-row>
+    </span>
+    </ion-item>
+  </div>
+
+  <button ion-button block color="theme">确认</button>
+</ion-content>
