@@ -5,30 +5,30 @@ import {Utils} from "./utils.service";
 import {GlobalData} from "./global-data.service";
 import {NativeService} from "./native.service";
 import {environment} from "../consts/environment";
-import {HttpClient, HttpErrorResponse} from "@angular/common/http";
 import {ErrorObservable} from 'rxjs/observable/ErrorObservable';
+import {HttpClient, HttpErrorResponse} from "@angular/common/http";
 
 @Injectable()
 export class HttpClientService {
-
   constructor(
-              private httpClient: HttpClient,
-              private globalData: GlobalData,
-              private nativeService: NativeService) {
+    private httpClient: HttpClient,
+    private globalData: GlobalData,
+    private nativeService: NativeService) {
   }
 
   postPHP(body) {
     return this.postPHPStart(body)
       .map((item: any) => (item))
   }
-  postPHPWithLoading(body){
-    return this.postPHPStart(body,true)
+
+  postPHPWithLoading(body) {
+    return this.postPHPStart(body, true)
       .map((item: any) => (item))
   }
 
   postPHPStart(data, loading?: boolean): Observable<Response> {
     const url = environment.serverUrl;
-    loading?this.nativeService.showLoading():null;
+    loading ? this.nativeService.showLoading() : null;
     const fullUrl = Utils.formatUrl(url.startsWith('http') ? url : environment.serverUrl + url);
     return this.httpClient
       .post(fullUrl, HttpClientService.buildURLSearchParams(data).toString(), {
@@ -38,7 +38,7 @@ export class HttpClientService {
       })
       .catch(response => this.errorHandler(response))
       .finally(() => {
-        loading?this.nativeService.hideLoading():null;
+        loading ? this.nativeService.hideLoading() : null;
       })
   }
 

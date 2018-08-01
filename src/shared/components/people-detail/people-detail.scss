@@ -1,14 +1,7 @@
 people-detail {
-  .dianzan{
-    img{
-      margin-right: 10px;
-      width: 20px;
-      height: 20px;
-    }
-  }
-  .people-top-area{
-    p{
-      margin: 0;
+  .people-top-area {
+    p {
+      margin: 10px;
     }
     margin-bottom: 10px;
   }
@@ -16,12 +9,12 @@ people-detail {
     color: #313131;
     font-size: 18px;
 
-    button{
+    button {
       height: 20px;
       font-size: 12px;
       vertical-align: middle;
       float: right;
-      img{
+      img {
         width: 13px;
         height: 13px;
         margin-right: 5px;
@@ -31,13 +24,12 @@ people-detail {
   .type {
     color: #747474;
     font-size: 14px;
-    margin: 10px 0;
   }
   .people-label {
     font-size: 10px;
     color: #ffffff;
     background-color: #74C547;
-    padding: 10px 10px;
+    padding: 4px 10px;
     border-radius: 10px;
     margin-right: 10px;
   }
@@ -47,26 +39,25 @@ people-detail {
     font-size: 12px;
   }
 
-  .detail-img{
+  .detail-img {
     height: 35vh;
     width: 100%;
   }
-
-
 
   .description {
     font-size: 12px;
     color: #747474;
   }
 
-  .text-input{
+  .text-input {
     background-color: #eeeeee;
     border-radius: 10px;
-    padding: 5px 0;
+    padding: 5px 10px;
     font-size: 13px;
   }
 
-  .send-comment{
+  .send-comment {
+    width: 30%;
     padding: 0 10px;
   }
 }

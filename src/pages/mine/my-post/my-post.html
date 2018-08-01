@@ -4,23 +4,20 @@
     <ion-title>我的发表</ion-title>
   </ion-navbar>
 
-  <ion-toolbar>
-    <ion-segment [(ngModel)]="segmentModel" color="dark" mode="md">
-      <ion-segment-button value="people" tappable (click)="getCollectionsLists('people')">
-        寻人
-      </ion-segment-button>
-      <ion-segment-button value="thing" tappable (click)="getCollectionsLists('thing')">
-        寻事
-      </ion-segment-button>
-      <ion-segment-button value="lose" tappable (click)="getCollectionsLists('lose')">
-        丢失
-      </ion-segment-button>
-      <ion-segment-button value="old" tappable (click)="getCollectionsLists('old')">
-        二手
-      </ion-segment-button>
-    </ion-segment>
-  </ion-toolbar>
-
+  <ion-segment [(ngModel)]="segmentModel" color="dark" mode="md">
+    <ion-segment-button value="people" tappable (click)="getCollectionsLists('people')">
+      寻人
+    </ion-segment-button>
+    <ion-segment-button value="thing" tappable (click)="getCollectionsLists('thing')">
+      寻事
+    </ion-segment-button>
+    <ion-segment-button value="lose" tappable (click)="getCollectionsLists('lose')">
+      丢失
+    </ion-segment-button>
+    <ion-segment-button value="old" tappable (click)="getCollectionsLists('old')">
+      二手
+    </ion-segment-button>
+  </ion-segment>
 </ion-header>
 
 

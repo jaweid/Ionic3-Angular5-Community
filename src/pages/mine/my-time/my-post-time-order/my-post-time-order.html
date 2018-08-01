@@ -26,15 +26,21 @@
       </span>
     </p>
 
-    <ion-item class="item-title-img" tappable (click)="orderDetail(item)">
-      <ion-thumbnail item-start>
-        <img [src]="item.img">
-      </ion-thumbnail>
-      <h4>{{item.title}}</h4>
-      <p ion-text>
-        <span class="price-single" float-right>￥{{item.price}}元/{{item.unit}}</span>
-      </p>
-    </ion-item>
+
+    <div class="time-item">
+      <ion-item tappable  (click)="orderDetail(item)">
+        <ion-avatar item-start class="time-item-avatar">
+          <img [src]="item.img">
+        </ion-avatar>
+          <div class="time-item-detail-top">
+            <ion-row>
+              <ion-col style="padding-left: 0" col-9 class="time-item-detail-top-name">{{item.title}}</ion-col>
+              <ion-col col-3 class="time-item-detail-top-price">{{item.price}}元/{{item.unit}}</ion-col>
+            </ion-row>
+          </div>
+      </ion-item>
+    </div>
+
 
     <ion-item class="operation-order" *ngIf="item.statusCode==='4'">
       <ion-row item-end>

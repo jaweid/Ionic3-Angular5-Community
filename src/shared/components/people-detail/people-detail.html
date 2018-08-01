@@ -8,12 +8,14 @@
 
   <ion-navbar>
     <ion-title>{{peopleDetail.title}}</ion-title>
-    <div float-right class="dianzan">
-      <img src="assets/imgs/dianzan.png">
-      <img src="assets/imgs/star-dark.png">
-
-    </div>
-
+    <ion-buttons end >
+      <button ion-button clear color="dark" icon-only>
+        <ion-icon style="font-size: 16px" name="app-dianzan"></ion-icon>
+      </button>
+      <button ion-button  clear color="dark" icon-only>
+        <ion-icon style="font-size: 16px" name="app-star"></ion-icon>
+      </button>
+    </ion-buttons>
   </ion-navbar>
 
 
@@ -23,7 +25,7 @@
 <ion-content padding>
   <div class="people-top-area">
     <p class="title" text-wrap>{{peopleDetail.title}}
-      <button ion-button  color="theme">
+      <button ion-button color="theme">
         <img src="assets/imgs/share.png">
         分享
       </button>

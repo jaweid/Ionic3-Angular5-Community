@@ -25,6 +25,12 @@ ion-icon {
   &[class*="app-done"] {
     mask-image: url(../assets/imgs/completed-logo.png);
   }
+  &[class*="app-dianzan"] {
+    mask-image: url(../assets/imgs/dianzan.png);
+  }
+  &[class*="app-star"] {
+    mask-image: url(../assets/imgs/star-dark.png);
+  }
 }
 
 

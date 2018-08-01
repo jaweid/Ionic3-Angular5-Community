@@ -36,7 +36,7 @@ export class MyPostTimeOrderComponent {
             status: '待支付',
             statusCode: '1',
             img: 'assets/imgs/mockdata/user1.jpg',
-            title: "手把手教你从零开始弹古筝",
+            title: "手把手教你从零开始弹古筝,手把手教你从零开始弹古筝",
             price: '200',
             unit: '小时',
             volume: '4',

@@ -1,8 +1,8 @@
 <ion-header>
 
-  <ion-navbar >
+  <ion-navbar mode="ios" text-center>
 
-    <ion-buttons start >
+    <ion-buttons start>
 
       <button ion-button icon-left class="position-btn" (click)="chooseCity()">
         <ion-icon name="app-pin" color="dark"></ion-icon>
@@ -10,13 +10,12 @@
       </button>
 
     </ion-buttons>
-    <ion-title >
 
-      <button class="search-btn" ion-button icon-right color="white" (click)="search()">
-        <span class="search-btn-text">请输入搜索关键词</span>
-        <ion-icon name="app-search" color="dark"></ion-icon>
-      </button>
-    </ion-title>
+    <button class="search-btn" ion-button icon-right color="white" (click)="search()">
+      <span class="search-btn-text">请输入搜索关键词</span>
+      <ion-icon name="app-search" color="dark"></ion-icon>
+    </button>
+
 
     <ion-buttons end>
 

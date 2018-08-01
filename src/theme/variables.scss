@@ -56,7 +56,14 @@ $popover-ios-width: 100vw;
 // App Material Design Variables
 // --------------------------------------------------
 // Material Design only Sass variables can go here
+$content-md-outer-background: #f4f4f4;
 
+$tabs-md-tab-text-color-active: #000000;
+$tabs-md-tab-icon-color-active: #F5EC5C;
+
+$popover-md-width: 100vw;
+
+$text-input-md-highlight-color:none;
 // App Theme
 // --------------------------------------------------
 // Ionic apps can have different themes applied, which can
@@ -78,10 +85,3 @@ $popover-ios-width: 100vw;
 
 //@import "roboto";
 //@import "noto-sans";
-.ion-ios-app-tab-mine:before {
-  content: url('../assets/imgs/tabs/tab_mine_on.png');
-}
-
-.ion-ios-app-tab-mine-outline:before {
-  content: url('../assets/imgs/tabs/tab_mine_off.png');
-}

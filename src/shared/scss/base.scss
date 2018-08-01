@@ -126,7 +126,7 @@
 .time-item {
   background-color: #ffffff;
   margin-bottom: 10px;
-  .item-ios.item-block .item-inner {
+  .item-ios.item-block .item-inner, .item-md.item-block .item-inner {
     padding-right: 0;
   }
   &-avatar {
@@ -207,6 +207,7 @@
   button {
     width: 20px;
     height: 20px;
+    border-bottom-color: #000000;
   }
   p {
     margin-top: 5px;
@@ -265,7 +266,9 @@
       text-overflow: ellipsis;
     }
     img {
-      border-radius: 50%;
+      //border-radius: 50%;
+      width: 40px;
+      height: 40px;
     }
     .volume {
       margin-top: 0.5rem;
@@ -301,16 +304,9 @@
 
 //sort category
 .sort-content-list {
-  ion-item{
+  ion-item {
     border-top: 1px solid #EEEEEE;
     text-align: center;
   }
 }
-ion-popover.popover-ios{
-  top: 14vh;
-}
-.popover-content {
-  left: 0 !important;
-  top: 0 !important;
-  border-radius: 0 !important;
-}
+

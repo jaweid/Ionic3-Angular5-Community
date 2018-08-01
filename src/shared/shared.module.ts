@@ -26,6 +26,7 @@ import {AppOrderComponent} from "./components/app-order/app-order";
 import {CalendarModule} from "ion2-calendar";
 import {GenerateNumberPipe} from "./pipes/generate-number/generate-number";
 import {AppTimesCollectionsComponent} from "./components/app-times-collections/app-times-collections";
+import {HandlePhoneNumberPipe} from "./pipes/handle-phone-number/handle-phone-number";
 
 @NgModule({
   imports: [
@@ -49,7 +50,8 @@ import {AppTimesCollectionsComponent} from "./components/app-times-collections/a
     AppOrderComponent,
     AppTimesCollectionsComponent,
 
-    GenerateNumberPipe
+    GenerateNumberPipe,
+    HandlePhoneNumberPipe
   ],
   exports: [
     AppToastWithIconComponent,
@@ -70,7 +72,8 @@ import {AppTimesCollectionsComponent} from "./components/app-times-collections/a
     CityPickerModule,
     CalendarModule,
 
-    GenerateNumberPipe
+    GenerateNumberPipe,
+    HandlePhoneNumberPipe
 
   ],
   entryComponents: [

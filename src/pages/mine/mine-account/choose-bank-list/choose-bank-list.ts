@@ -7,8 +7,7 @@ import {Storage} from '@ionic/storage';
   templateUrl: 'choose-bank-list.html',
 })
 export class ChooseBankListPage {
-  public bankList =
-    [{bank_id: "1", bank_name: "北京银行", bank_img: "http://yany.gotoip4.com/images/bank/北京银行.png"},
+  public bankList =[
     {bank_id: "1", bank_name: "北京银行", bank_img: "http://yany.gotoip4.com/images/bank/北京银行.png"},
     {bank_id: "2", bank_name: "工商银行", bank_img: "http://yany.gotoip4.com/images/bank/工商银行.png"},
     {bank_id: "3", bank_name: "光大银行", bank_img: "http://yany.gotoip4.com/images/bank/光大银行.png"},

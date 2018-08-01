@@ -10,6 +10,12 @@ app-people-search {
         height: 24vw;
         border-radius: 5px;
       }
+      @media screen and (max-width: 320px) {
+        img {
+          width: 15vw;
+          height: 10vw;
+        }
+      }
     }
     .title {
       font-size: 14px;

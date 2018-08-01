@@ -25,20 +25,24 @@
       </span>
     </p>
 
-    <ion-item class="item-title-img">
-      <ion-thumbnail item-start>
-        <img [src]="orderDetail.img">
-      </ion-thumbnail>
-      <h4>{{orderDetail.title}}</h4>
-      <p ion-text>
-        <span class="price-single" float-right>￥{{orderDetail.price}}元/{{orderDetail.unit}}</span>
-      </p>
-    </ion-item>
+    <div class="time-item">
+      <ion-item tappable  >
+        <ion-avatar item-start class="time-item-avatar">
+          <img [src]="orderDetail.img">
+        </ion-avatar>
+        <div class="time-item-detail-top">
+          <ion-row>
+            <ion-col style="padding-left: 0" col-9 class="time-item-detail-top-name">{{orderDetail.title}}</ion-col>
+            <ion-col col-3 class="time-item-detail-top-price">{{orderDetail.price}}元/{{orderDetail.unit}}</ion-col>
+          </ion-row>
+        </div>
+      </ion-item>
+    </div>
 
     <ion-item class="app-item-border">
       <span class="detail-text">数量：{{orderDetail.volume}}</span>
     </ion-item>
-    <ion-item class="app-item-border">
+    <ion-item >
       <span class="detail-text">总价：¥{{orderDetail.sumPrice}}</span>
     </ion-item>
 

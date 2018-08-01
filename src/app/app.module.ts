@@ -41,7 +41,7 @@ import {MyTimePageModule} from "../pages/mine/my-time/my-time.module";
     BrowserModule,
     IonicModule.forRoot(MyApp, {
       backButtonText: '',
-      mode: 'ios',//android是'md'
+      // mode: 'ios',//android是'md'
     }),
     IonicStorageModule.forRoot(),
     SharedModule.forRoot(),

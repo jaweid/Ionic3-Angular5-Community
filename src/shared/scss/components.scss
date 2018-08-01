@@ -1,9 +1,5 @@
 //rewrite ionic components style
-@media screen and (max-width: 320px) {
-  * {
-    font-size: 12px;
-  }
-}
+
 
 //fonts
 @font-face {
@@ -22,7 +18,7 @@ ion-navbar {
   .toolbar-background {
     background-color: $app-theme;
   }
-  .toolbar-title-ios {
+  .toolbar-title-ios, .toolbar-title-md {
     color: #313131;
   }
 }
@@ -37,7 +33,7 @@ ion-header ion-icon.back-button-icon.icon {
 }
 
 //item
-.item-ios.item-block .item-inner {
+.item-ios.item-block .item-inner, .item-md.item-block .item-inner {
   border: none;
   .label {
     font-size: 14px;
@@ -47,19 +43,22 @@ ion-header ion-icon.back-button-icon.icon {
 }
 
 //city-picker
-city-picker ,ion-datetime,ion-multi-picker{
+city-picker, ion-datetime, ion-multi-picker {
   font-size: 12px;
 }
-.picker-ios .picker-toolbar{
+
+.picker-ios .picker-toolbar {
   border-bottom-color: #EEEEEE;
-  .button-ios{
+  .button-ios {
     font-size: 14px;
   }
 }
-.picker-ios .picker-opt{
+
+.picker-ios .picker-opt,.picker-md .picker-opt{
   font-size: 14px;
   padding-bottom: 10px;
 }
+
 .picker-ios .picker-button, .picker-ios .picker-button.activated {
   color: #000000;
 }
@@ -68,22 +67,37 @@ city-picker ,ion-datetime,ion-multi-picker{
   text-align: start !important;
 }
 
-
 //segment toolbar
-.header-ios .toolbar-ios:last-child .toolbar-background-ios{
+.header-ios .toolbar-ios:last-child .toolbar-background-ios ,
+.header-md .toolbar-md:last-child .toolbar-background-md
+{
   border: none;
 }
-.toolbar-ios .segment-button{
+
+.toolbar-ios .segment-button, .toolbar-md .segment-button{
   max-width: 100%;
 }
 
-
 //action sheet
-ion-action-sheet{
-  .button-inner{
+ion-action-sheet {
+  .button-inner {
     color: #212121;
     font-size: 15px;
   }
+}
+
+//popover
+ion-popover.popover-ios{
+  top: 14vh;
+
+}
+ion-popover.popover-md{
+  top:16vh;
+}
+.popover-content {
+  left: 0 !important;
+  top: 0 !important;
+  border-radius: 0 !important;
 }
 
 

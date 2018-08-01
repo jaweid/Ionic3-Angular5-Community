@@ -9,6 +9,12 @@ app-goods-search {
         width: 33vw;
         height: 24vw;
       }
+      @media screen and (max-width: 320px) {
+        img {
+          width: 15vw;
+          height: 10vw;
+        }
+      }
     }
     .title {
       font-size: 14px;

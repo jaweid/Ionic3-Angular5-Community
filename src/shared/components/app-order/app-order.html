@@ -11,22 +11,28 @@
       </span>
     </p>
 
-    <div tappable>
-      <ion-item class="item-title-img">
-        <ion-thumbnail item-start>
+    <div class="time-item">
+      <ion-item tappable>
+        <ion-avatar item-start class="time-item-avatar">
           <img [src]="item.img">
-        </ion-thumbnail>
-        <h4>{{item.title}}</h4>
-        <p ion-text>
-          <span class="volume">数量：{{item.volume}}</span>
-          <span class="price-single" float-right>￥{{item.price}}元/{{item.unit}}</span>
-        </p>
-      </ion-item>
+        </ion-avatar>
+        <div>
+          <div class="time-item-detail-top">
+            <ion-row>
+              <ion-col style="padding-left: 0" col-9 class="time-item-detail-top-name">{{item.title}}</ion-col>
+              <ion-col col-3 class="time-item-detail-top-price">{{item.price}}元/{{item.unit}}</ion-col>
+            </ion-row>
+          </div>
 
-      <ion-item class="price">
-        <p>价格:<span class="sum-price">￥{{item.sumPrice}}元</span></p>
-        <p>共{{item.volume}}个</p>
+          <div class="time-item-detail-bottom">
+            <span>数量：{{item.volume}}</span>
+          </div>
+        </div>
       </ion-item>
+      <div class="price">
+      <p>价格:<span class="sum-price">￥{{item.sumPrice}}元</span></p>
+      <p>共{{item.volume}}个</p>
+      </div>
 
     </div>
 
