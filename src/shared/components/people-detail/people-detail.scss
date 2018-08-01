@@ -37,7 +37,7 @@ people-detail {
     font-size: 10px;
     color: #ffffff;
     background-color: #74C547;
-    padding: 0 10px;
+    padding: 10px 10px;
     border-radius: 10px;
     margin-right: 10px;
   }
@@ -57,5 +57,16 @@ people-detail {
   .description {
     font-size: 12px;
     color: #747474;
+  }
+
+  .text-input{
+    background-color: #eeeeee;
+    border-radius: 10px;
+    padding: 5px 0;
+    font-size: 13px;
+  }
+
+  .send-comment{
+    padding: 0 10px;
   }
 }

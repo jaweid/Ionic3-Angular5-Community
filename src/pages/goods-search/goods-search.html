@@ -8,10 +8,11 @@
 
   <ion-navbar>
     <ion-title>
-      {{currentTitle==='寻物'?'寻物':'二手物品'}}
+      {{currentTitle==='lose'?'寻物':'二手物品'}}
     </ion-title>
-    <ion-buttons end tappable (click)="toggleTitle()">
-      {{currentTitle==='寻物'?'二手物品':'寻物'}}
+    <ion-buttons end >
+      <button class="toggle-type" color="dark"  ion-button clear tappable (click)="toggleTitle()">
+        {{currentTitle==='lose'?'二手物品':'寻物'}}</button>
     </ion-buttons>
   </ion-navbar>
 

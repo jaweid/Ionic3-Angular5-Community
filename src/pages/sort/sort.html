@@ -30,7 +30,9 @@
         <ion-scroll scrollY="true" #scroll style="height:100%">
           <!-- 二级分类 -->
 
-          <app-secondary-menu [secondaryMenuList]="secondaryMenus" ></app-secondary-menu>
+          <app-secondary-menu
+            (clickMenu)="clickSecondMenu($event)"
+            [secondaryMenuList]="secondaryMenus" ></app-secondary-menu>
 
           <ion-infinite-scroll >
             <ion-infinite-scroll-content   loadingText="加载更多数据中..." threshold="30%"></ion-infinite-scroll-content>

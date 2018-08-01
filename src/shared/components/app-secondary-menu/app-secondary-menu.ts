@@ -14,11 +14,8 @@ import {SecondaryMenuList} from "../../resources/sort/secondary-menu-list";
 export class AppSecondaryMenuComponent {
   @Input() secondaryMenuList:SecondaryMenuList[]=[];
   @Output() clickMenu:EventEmitter<undefined>=new EventEmitter();
-  text: string;
 
   constructor() {
-    console.log('Hello AppSecondaryMenuComponent Component');
-    this.text = 'Hello World';
   }
 
   clickMenuEvent(menuId){

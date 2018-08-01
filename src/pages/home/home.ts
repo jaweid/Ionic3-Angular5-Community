@@ -76,7 +76,7 @@ export class HomePage {
     {
       id: '1',
       avatar: 'assets/imgs/mockdata/looking-for-person.jpg',
-      title: '5年战友，今在何方',
+      title: '5年战友，今在何方,5年战友，今在何方',
       subTitle: '寻找北方军区一连三排，5班班长章三。寻找北方军区一连三排，5班班长章三。寻找北方军区一连三排，5班班长章三',
       date: '2018/4/15',
       viewNumber: '1234',

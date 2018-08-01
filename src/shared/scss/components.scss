@@ -1,4 +1,9 @@
 //rewrite ionic components style
+@media screen and (max-width: 320px) {
+  * {
+    font-size: 12px;
+  }
+}
 
 //fonts
 @font-face {

@@ -70,10 +70,10 @@ export class GoodsSearchPage {
   }
 
   public showFilterModal;
-  public currentTitle='寻物';
+  public currentTitle='lose';
   public filterModel: any = {};
   toggleTitle(){
-
+    this.currentTitle==='lose'?this.currentTitle='old':this.currentTitle='lose';
   }
   presentPopover(value) {
     if (this.showFilterModal) {

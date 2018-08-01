@@ -10,6 +10,7 @@ import {SecondaryMenuList} from "../../shared/resources/sort/secondary-menu-list
   templateUrl: 'sort.html',
 })
 export class SortPage {
+  public currentFirstMenu = '1';
   firstMenus: Array<FirstMenu> = [
     {
       name: '寻人',
@@ -63,6 +64,7 @@ export class SortPage {
   getSecondaryMenu(firstMenuId) {
     switch (firstMenuId) {
       case '1':
+        this.currentFirstMenu = firstMenuId;
         this.secondaryMenus = [
           {
             title: '',
@@ -97,6 +99,7 @@ export class SortPage {
         ];
         break;
       case '2':
+        this.currentFirstMenu = firstMenuId;
         this.secondaryMenus = [{
           title: '',
           menu: [
@@ -124,6 +127,7 @@ export class SortPage {
         }];
         break;
       case '3':
+        this.currentFirstMenu = firstMenuId;
         this.secondaryMenus = [{
           title: '丢失物品',
           menu: [
@@ -183,6 +187,7 @@ export class SortPage {
         }];
         break;
       case '4':
+        this.currentFirstMenu = firstMenuId;
         this.secondaryMenus = [{
           title: '',
           menu: [
@@ -210,6 +215,23 @@ export class SortPage {
         }];
         break;
 
+    }
+  }
+
+
+  clickSecondMenu(second) {
+    switch (this.currentFirstMenu) {
+      case '1':
+        this.navCtrl.push('PeopleSearchPage');
+        break;
+      case '2':
+        this.navCtrl.push('ThingSearchPage');
+        break;
+      case '3':
+        this.navCtrl.push('GoodsSearchPage');
+        break;
+      case '4':
+        this.navCtrl.push('TimesTradePage');
     }
   }
 }

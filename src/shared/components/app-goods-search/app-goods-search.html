@@ -15,20 +15,14 @@
       <span>¥ {{item.price}}</span>
       <img *ngIf="!item.collectionDate" class="phone" src="assets/imgs/home/icon/phone-outline.png">
     </p>
-    <ion-row class="time-item-detail-bottom">
-      <ion-col col-6>
-        <img style="width: 13px;height: 13px" src="assets/imgs/home/icon/date.png">
-        <span class="number">{{item.date}}</span>
-      </ion-col>
-      <ion-col col-3>
-        <img style="width: 17px;height: 8px" src="assets/imgs/home/icon/viewer.png">
-        <span class="number">{{item.viewNumber}}</span>
-      </ion-col>
-      <ion-col col-3>
-        <img style="width: 14px;height: 12px;margin-left: 10px" src="assets/imgs/home/icon/comments.png">
-        <span>{{item.commentsNumber}}</span>
-      </ion-col>
-    </ion-row>
+    <div class="time-item-detail-bottom">
+      <img style="width: 13px;height: 13px" src="assets/imgs/home/icon/date.png">
+      <span class="number">{{item.date}}</span>
+      <img style="width: 17px;height: 8px" src="assets/imgs/home/icon/viewer.png">
+      <span class="number">{{item.viewNumber}}</span>
+      <img style="width: 14px;height: 12px;margin-left: 10px" src="assets/imgs/home/icon/comments.png">
+      <span>{{item.commentsNumber}}</span>
+    </div>
   </ion-item>
 
 

@@ -1,7 +1,7 @@
 app-people-search {
   .time-item {
     ion-item {
-      padding:0 9px;
+      padding: 0 8px;
     }
     &-avatar {
       margin-right: 10px !important;
@@ -10,9 +10,6 @@ app-people-search {
         height: 24vw;
         border-radius: 5px;
       }
-    }
-    .item-ios.item-block .item-inner .label{
-      margin-top: -20px;
     }
     .title {
       font-size: 14px;
@@ -24,7 +21,7 @@ app-people-search {
     .sub-title {
       color: #838383;
       font-size: 12px;
-      overflow : hidden;
+      overflow: hidden;
       text-overflow: ellipsis;
       display: -webkit-box;
       -webkit-line-clamp: 2;
@@ -32,10 +29,6 @@ app-people-search {
     }
 
     &-detail-bottom {
-      position: absolute;
-      bottom: 5px;
-      right: 5px;
-
       .number {
         margin-right: 5px;
       }
