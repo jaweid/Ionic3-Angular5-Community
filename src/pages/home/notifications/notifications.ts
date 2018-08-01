@@ -1,6 +1,7 @@
 import {Component} from '@angular/core';
 import { NavController, NavParams} from 'ionic-angular';
 import {Notifications} from "../../../shared/resources/notifications/notifications";
+import {NotificationDetailComponent} from "./notification-detail/notification-detail";
 
 @Component({
   selector: 'page-notifications',
@@ -31,4 +32,7 @@ export class NotificationsPage {
   ionViewDidLoad() {
   }
 
+  detail(item){
+    this.navCtrl.push(NotificationDetailComponent,{data:item});
+  }
 }

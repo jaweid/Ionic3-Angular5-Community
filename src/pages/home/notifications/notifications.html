@@ -10,7 +10,7 @@
 
 <ion-content >
   <div class="notifications-list">
-    <div class="notifi-item"  *ngFor="let item of notificationsList" >
+    <div class="notifi-item" tappable (click)="detail(item)" *ngFor="let item of notificationsList" >
       <span class="text">
         {{ item.title }}
       </span>

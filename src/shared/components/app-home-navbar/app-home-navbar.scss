@@ -10,6 +10,7 @@ app-home-navbar {
 
   .search-btn {
     height: 30px;
+    width: 90%;
     max-width: 100%;
     border-radius: 20px;
     &-text {
@@ -18,7 +19,8 @@ app-home-navbar {
       margin-right: 20px;
     }
     ion-icon{
-      font-size: 20px;
+      font-size: 15px;
+      float: right;
     }
   }
 

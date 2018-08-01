@@ -4,12 +4,14 @@ import { HomePage } from './home';
 import {SharedModule} from "../../shared/shared.module";
 import {ChooseCityComponent} from "./choose-city/choose-city";
 import {NotificationsPage} from "./notifications/notifications";
+import {NotificationDetailComponent} from "./notifications/notification-detail/notification-detail";
 
 @NgModule({
   declarations: [
     HomePage,
     ChooseCityComponent,
-    NotificationsPage
+    NotificationsPage,
+    NotificationDetailComponent
   ],
   imports: [
     IonicPageModule.forChild(HomePage),
@@ -17,7 +19,8 @@ import {NotificationsPage} from "./notifications/notifications";
   ],
   entryComponents:[
     ChooseCityComponent,
-    NotificationsPage
+    NotificationsPage,
+    NotificationDetailComponent
   ]
 })
 export class HomePageModule {}

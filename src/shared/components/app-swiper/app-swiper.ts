@@ -13,7 +13,7 @@ import {HelperService} from "../../services/helper.service";
 })
 export class AppSwiperComponent {
   @Input() ImgList = [];
-  @Input() height: number = 25;
+  @Input() height: number = 30;
 
   constructor() {
   }
