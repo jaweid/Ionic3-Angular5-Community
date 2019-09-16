@@ -27,6 +27,9 @@ ionic run serve
 
 - 发布
 
+![image](https://raw.githubusercontent.com/jiaweixianxian/Ionic3-Angular5-XianYu/master/blob/3.png)
+
+
 
 ### 该项目还展示了一些常用的Angular生态移动端库的使用方法：
 
