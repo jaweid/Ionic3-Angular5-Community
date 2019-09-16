@@ -33,9 +33,10 @@ ionic run serve
 
 ![image](https://raw.githubusercontent.com/jiaweixianxian/Ionic3-Angular5-XianYu/master/blob/1.png)
 
-- 寻物
+- 寻人寻事寻物
+![image](https://raw.githubusercontent.com/jiaweixianxian/Ionic3-Angular5-XianYu/master/blob/2.png)
 
-- 我的模块
+- 发布
 
 ### 你可能需要的
 
