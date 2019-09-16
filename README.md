@@ -4,17 +4,6 @@
 
 在登录退出模块展示了在Angular应用里如何使用==RXJS==进行数据状态管理。
 
-### 该项目还展示了一些常用的Angular生态移动端库的使用方法：
-
-- ion-multi-picker
-- ion2-calendar
-- ionic2-city-picker
-- cordova-plugin-device
-- cordova-plugin-camera
-- cordova-plugin-file
-- cordova-plugin-ionic-keyboard
-- cordova-plugin-network-information
-- cordova-plugin-x-toast
 
 
 
@@ -29,6 +18,19 @@ ionic run serve
 
 # APP预览
 
+![image](https://raw.githubusercontent.com/jiaweixianxian/Ionic3-Angular5-XianYu/master/blob/1.png)
+
+### 该项目还展示了一些常用的Angular生态移动端库的使用方法：
+
+- ion-multi-picker
+- ion2-calendar
+- ionic2-city-picker
+- cordova-plugin-device
+- cordova-plugin-camera
+- cordova-plugin-file
+- cordova-plugin-ionic-keyboard
+- cordova-plugin-network-information
+- cordova-plugin-x-toast
 
 
 ### 你可能需要的
