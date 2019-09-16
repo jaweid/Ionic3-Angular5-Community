@@ -29,6 +29,11 @@ ionic run serve
 
 ![image](https://raw.githubusercontent.com/jiaweixianxian/Ionic3-Angular5-XianYu/master/blob/3.png)
 
+- 时间买卖
+
+![image](https://raw.githubusercontent.com/jiaweixianxian/Ionic3-Angular5-XianYu/master/blob/5.png)
+
+
 - 我的账户
 
 ![image](https://raw.githubusercontent.com/jiaweixianxian/Ionic3-Angular5-XianYu/master/blob/4.png)
