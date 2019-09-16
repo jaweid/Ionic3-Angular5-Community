@@ -2,8 +2,19 @@
 
 这是一个使用ionic3开发的类似咸鱼的二手社区app，主要包括寻人，寻事，寻物，二手交易，时间买卖，发布信息，订单等模块。包含了丰富的常用场景，开发中常遇到的页面布局方式。
 
-在登录退出模块展示了在Angular应用里如何使用==RXJS==进行数据状态管理。
+在登录退出模块展示了在Angular应用里如何使用***RXJS***进行数据状态管理。
 
+### 该项目还展示了一些常用的Angular生态移动端库的使用方法：
+
+- ion-multi-picker
+- ion2-calendar
+- ionic2-city-picker
+- cordova-plugin-device
+- cordova-plugin-camera
+- cordova-plugin-file
+- cordova-plugin-ionic-keyboard
+- cordova-plugin-network-information
+- cordova-plugin-x-toast
 
 
 
@@ -18,20 +29,13 @@ ionic run serve
 
 # APP预览
 
+- 整体模块
+
 ![image](https://raw.githubusercontent.com/jiaweixianxian/Ionic3-Angular5-XianYu/master/blob/1.png)
 
-### 该项目还展示了一些常用的Angular生态移动端库的使用方法：
+- 寻物
 
-- ion-multi-picker
-- ion2-calendar
-- ionic2-city-picker
-- cordova-plugin-device
-- cordova-plugin-camera
-- cordova-plugin-file
-- cordova-plugin-ionic-keyboard
-- cordova-plugin-network-information
-- cordova-plugin-x-toast
-
+- 我的模块
 
 ### 你可能需要的
 
