@@ -51,6 +51,8 @@ ionic run serve
 - cordova-plugin-network-information
 - cordova-plugin-x-toast
 
+#### 如果您觉得这个项目对您的工作或者学习产生了好的意义，或者解决了您的某些问题，希望您可以给个Star鼓励一下，万分感谢～
+
 
 ### 你可能需要的
 
